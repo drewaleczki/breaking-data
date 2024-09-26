@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B2023A8F-0A1D-3820-7563-6F5C788B9A4B" name="MC_SGV_PRODUTO_VIDEO">
+<createdBy>salviop</createdBy>
+<createdTime>2013-03-01 10:51:48 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<ordsAlias>kd_produto_imagem</ordsAlias>
+<abbreviation>Tabela contendo informações sobre os vídeos dos produtos da Melhores Compras</abbreviation>
+<allowColumnReorder>false</allowColumnReorder>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_PRODUTO" id="225F4AB9-BBCA-CB8B-97D8-9F2E897388F7">
+<createdBy>salviop</createdBy>
+<createdTime>2013-03-01 10:55:10 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<associations>
+<colAssociation fkAssociation="486939C0-81F8-3AF4-A9FA-626E4D106E58" referredColumn="7C5C6ED1-7E54-30C0-CE0F-68E16D66953D"/>
+</associations>
+</Column>
+<Column name="NR_SEQUENCIA" id="841F8E3A-5C2D-8E5E-D0D5-86B7F63BF8AE">
+<createdBy>salviop</createdBy>
+<createdTime>2013-03-01 10:54:45 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a sequencia do vídeo a partir do codigo do produto. Sempre o primeiro vídeo de determinado  produto deve iniciar com o número 1. Seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a sequencia do vídeo a partir do codigo do produto. Sempre o primeiro vídeo de determinado  produto deve iniciar com o número 1. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Column>
+<Column name="CD_CATEGORIA" id="A233A3CF-0140-DE6D-77BD-48DF91F43D43">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 17:11:14 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de categoria de produtos da Melhorees Compras. Cada categoria nova cadastrada  será acionada a Sequence  SQ_MC_CATEGORIA que se encarregará de gerar o próximo número único da categoria..]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave primária da tabela de categoria de produtos da Melhorees Compras. Cada categoria nova cadastrada  será acionada a Sequence  SQ_MC_CATEGORIA que se encarregará de gerar o próximo número único da categoria..]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FFA2F13-80FB-A10B-B03E-33E7797AFDF1" referredColumn="6FE4DFF9-F6D8-9A94-47FB-72B7C42C199F"/>
+</associations>
+</Column>
+<Column name="VD_PRODUTO" id="7E9B5FE8-F95F-BBC5-5033-C404255A519D">
+<createdBy>salviop</createdBy>
+<createdTime>2013-03-01 10:54:45 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar oo vídeo do produto no formato que melhor lhe  convier.  Para utilizar essa coluna tenha acesso a documentação oficial da Oracle. Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar oo vídeo do produto no formato que melhor lhe  convier.  Para utilizar essa coluna tenha acesso a documentação oficial da Oracle. Seu conteúdo é opcional.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Column>
+<Column name="TP_VIDEO_PROD" id="68F27392-EC5D-014F-2F75-0F87D52C362C">
+<createdBy>salviop</createdBy>
+<createdTime>2013-03-01 10:54:45 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o tipo do  vídeo do produto. Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o tipo do  vídeo do produto. Seu conteúdo é opcional.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Column>
+<Column name="DS_PATH_VIDEO_PROD" id="DD2A19E7-4C8A-406A-D42F-8A3E827266F8">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 22:53:53 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o caminho de acesso (link) contendo o  vídeo do produto. Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o caminho de acesso (link) contendo o  vídeo do produto. Seu conteúdo é opcional.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_VIDEO_PROD" id="75704233-C2A1-B23A-1A14-A42BC76B368D">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 13:11:34 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o stauts do vídeo do produto da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o stauts do vídeo do produto da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE5DBEAD-59E7-2F73-3BB4-44F72011E9A2" name="PK_MC_PRODUTO_IMAGEM">
+<createdBy>salviop</createdBy>
+<createdTime>2013-03-01 10:54:45 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="841F8E3A-5C2D-8E5E-D0D5-86B7F63BF8AE"/>
+<colUsage columnID="225F4AB9-BBCA-CB8B-97D8-9F2E897388F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FF188416-05D0-1E22-CE8C-BB61AB076AC0" name="FK_MC_PRODUTO_IMAGEM">
+<createdBy>salviop</createdBy>
+<createdTime>2013-03-01 10:55:10 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="225F4AB9-BBCA-CB8B-97D8-9F2E897388F7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AA46EE23-6156-CDA0-A7E0-4697B4F3F8AC" name="FK_MC_CATEGORIA_VIDEO">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 17:11:14 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A233A3CF-0140-DE6D-77BD-48DF91F43D43"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
