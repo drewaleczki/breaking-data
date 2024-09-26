@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="95DF01B0-D1F0-AA8B-119C-F4374E4D5116" containerWithKeyObject="EB9B7164-19BA-F23F-6635-8F7FAA48C746" localFKIndex="DECF55F3-69D0-BC63-9778-191036578FF2" name="FK_MC_LOG_CD_LOG">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[fk_mc_logradouro_cd_logradouro]]></comment>
+<generatorID>AF3DBFA2-4B88-C5A3-5D75-B8D093025FF8</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<referredTableLongName>MC_LOGRADOURO</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>7C225A3E-188F-715F-34EB-5BE93C1B9D06</referredTableID>
+<keyObject>B6C6E151-73AA-663B-7217-60A4B372B1B0</keyObject>
+<referredKeyID>B6C6E151-73AA-663B-7217-60A4B372B1B0</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_LOUGRADOURO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
