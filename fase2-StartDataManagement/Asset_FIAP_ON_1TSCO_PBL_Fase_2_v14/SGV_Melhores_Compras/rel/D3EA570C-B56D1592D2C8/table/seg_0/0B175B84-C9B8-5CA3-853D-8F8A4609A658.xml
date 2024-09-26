@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B175B84-C9B8-5CA3-853D-8F8A4609A658" name="MC_CLI_FISICA">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:39:16 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<ordsAlias>kd_cli_fisica</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NR_CLIENTE" id="8BB15509-5074-C4F6-99E5-F25E23890443">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:40:50 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da tabela NC_CLIENTE. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da tabela NC_CLIENTE. ]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<associations>
+<colAssociation fkAssociation="147717CD-18B0-2F3C-6FEF-A935C9708543" referredColumn="A0AE6625-F1C4-40D5-0C78-0D4E4450D37E"/>
+</associations>
+</Column>
+<Column name="DT_NASCIMENTO" id="55CA6A8F-4C56-0C97-E5CD-2FA7E2DD7194">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:40:39 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Column>
+<Column name="FL_SEXO_BIOLOGICO" id="C3A35F9B-60DB-6075-E05D-4ED183D0FC0E">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-10-12 12:21:39 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o sexo biológico do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o sexo biológico do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.. ]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_GENERO" id="A8B4F81F-141F-BFA9-90D4-35AA732DF0BC">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:40:39 UTC</createdTime>
+<comment><![CDATA[Genero do sexo do Cliente. Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Genero do sexo do Cliente. Seu conteúdo deve ser obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+</Column>
+<Column name="NR_CPF" id="B12580B8-9CB8-A062-5BFF-41A5F816FA19">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:40:39 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o número do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o número do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. ]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>14</dataTypeSize>
+<ownDataTypeParameters>14,,</ownDataTypeParameters>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="AE5F6D21-4F3B-A0E3-4CFD-C4491A74CD3E" name="PK_MC_CLI_FISICA">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:48:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="8BB15509-5074-C4F6-99E5-F25E23890443"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CE438EA0-6A50-5623-08EA-23C3DE5736EA" name="FK_MC_CLIENTE_FISICA">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:40:50 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="8BB15509-5074-C4F6-99E5-F25E23890443"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

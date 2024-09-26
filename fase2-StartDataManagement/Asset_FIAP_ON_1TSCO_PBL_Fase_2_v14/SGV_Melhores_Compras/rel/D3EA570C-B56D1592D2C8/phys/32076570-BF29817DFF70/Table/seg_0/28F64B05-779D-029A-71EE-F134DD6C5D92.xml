@@ -1,0 +1,48 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MC_SGV_VISUALIZACAO_VIDEO" directorySegmentName="seg_0" id="28F64B05-779D-029A-71EE-F134DD6C5D92">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 23:21:19 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CD_VISUALIZACAO_VIDEO" id="34AC82C6-64AA-D355-81FE-5F624BE0DA86">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_PRODUTO" id="61E38BA1-A359-A679-E22C-4BCFAF7F175B">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 23:24:28 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HR_VISUALIZACAO" id="A1E786CF-130D-AF84-BC29-1581DC11FB21">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 13:26:42 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_VISUALIZACAO" id="DFEE5AD1-AFA4-EB87-9AEF-6E7EC20392FF">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 23:21:19 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MC_PRODUTO_VISUALIZACAO" id="7762E374-06E7-C109-4CFB-38302A21A3D4">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 23:24:28 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_MC_SGV_VISUALIZACAO_VIDEO" id="7BEBDB6A-3EBC-FDA5-A5F1-C6B98BD31B07">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 23:21:19 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

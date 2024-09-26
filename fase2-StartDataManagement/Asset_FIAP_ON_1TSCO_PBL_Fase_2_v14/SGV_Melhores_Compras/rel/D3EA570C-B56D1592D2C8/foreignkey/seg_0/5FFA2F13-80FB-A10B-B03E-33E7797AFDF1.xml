@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="5FFA2F13-80FB-A10B-B03E-33E7797AFDF1" containerWithKeyObject="B2023A8F-0A1D-3820-7563-6F5C788B9A4B" localFKIndex="AA46EE23-6156-CDA0-A7E0-4697B4F3F8AC" name="FK_MC_CATEGORIA_VIDEO">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 17:11:14 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<referredTableLongName>MC_CATEGORIA_PROD</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>F56410BD-5D00-30FD-AE2A-449C52BFDAFF</referredTableID>
+<keyObject>98187F79-33B0-C605-C10A-8CF718A89D87</keyObject>
+<referredKeyID>98187F79-33B0-C605-C10A-8CF718A89D87</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_CATEGORIA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

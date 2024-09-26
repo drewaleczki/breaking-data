@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DB5BED7F-2AEF-7CEF-DFC4-5E620099C699" name="MC_ESTADO">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:36:25 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<ordsAlias>kd_estado</ordsAlias>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SG_ESTADO" id="52244476-C5C1-4732-1A72-E3E00701718E">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:38:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Column>
+<Column name="NM_ESTADO" id="6C6F1CCD-F35C-2095-E99A-C5698BF7D335">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:38:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o nome do estado]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do estado]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6CC7716-49FC-274F-E4DF-442A16BFD800" name="PK_MC_ESTADO">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:38:43 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="52244476-C5C1-4732-1A72-E3E00701718E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
