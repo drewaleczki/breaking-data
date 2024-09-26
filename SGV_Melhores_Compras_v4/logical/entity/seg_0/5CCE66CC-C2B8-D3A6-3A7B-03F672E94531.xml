@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5CCE66CC-C2B8-D3A6-3A7B-03F672E94531" name="MC_ESTADO">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<generatorID>DB5BED7F-2AEF-7CEF-DFC4-5E620099C699</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_ESTADO" id="4A3C79E2-1FA9-DA01-4BAD-2A47FDF689DC">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:38:23 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SG_ESTADO" id="64441550-5420-E5D9-A018-CA0653E6B836">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>52244476-C5C1-4732-1A72-E3E00701718E</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_ESTADO" id="894E6416-E2F1-3F9C-124D-6A0C15A90BFB">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o nome do estado]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do estado]]></commentInRDBMS>
+<generatorID>6C6F1CCD-F35C-2095-E99A-C5698BF7D335</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="C3BE6F5D-9B73-E456-187A-D3810AA310B8" name="MC_ESTADO_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:38:44 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>4A3C79E2-1FA9-DA01-4BAD-2A47FDF689DC</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

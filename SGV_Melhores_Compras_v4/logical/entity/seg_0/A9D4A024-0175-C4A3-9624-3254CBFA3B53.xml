@@ -1,0 +1,159 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A9D4A024-0175-C4A3-9624-3254CBFA3B53" name="MC_CATEGORIA_PROD">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<generatorID>F56410BD-5D00-30FD-AE2A-449C52BFDAFF</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_CATEGORIA" id="2A4D0FD6-1DC5-3FCF-ECFB-5E6FEE22384A">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:11:25 UTC</createdTime>
+<commentInRDBMS><![CDATA[SEQUENCE ou  IDENTITY e crescente]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_PRODUTO" id="CA617FC9-A654-C55D-45BB-F2AA526DB74F">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-09-16 12:45:10 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Nessa  coluna  será  armazenada o Código de produto, que pode ou não ter uma categoria.]]></commentInRDBMS>
+<generatorID>EA87DEB9-D441-D85C-5CB1-807135FC2D39</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2D0729E2-3896-A8CB-8ECB-8D20F972A898</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TP_CATEGORIA" id="753491B9-EBF0-DC6E-B433-02D1832CC1A9">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Nessa  coluna  será  armazenada o tipo de categoria que poderá  ser (V)ídeo ou (P)rodudto. Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Nessa  coluna  será  armazenada o tipo de categoria que poderá  ser (V)ídeo ou (P)rodudto. Seu conteúdo deve ser obrigatório.]]></commentInRDBMS>
+<generatorID>87776562-5586-D266-ABF4-817868D12ACD</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_CATEGORIA" id="45BCAC1A-062E-6323-1410-FA97EA6F8FE2">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar descrição da categoria de produtos da Melhorees Compras. Cada categoria tem uma  descrição única e serve para organizar os produtos em categorias simliares, melhorando a tomada de decisão.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar descrição da categoria de produtos da Melhorees Compras. Cada categoria tem uma  descrição única e serve para organizar os produtos em categorias simliares, melhorando a tomada de decisão.]]></commentInRDBMS>
+<generatorID>547AFB54-22C4-DF80-6C82-485F47103D48</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_INICIO" id="1A36E138-DE89-5BF5-A847-BB89C29ECDEB">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá receber  a data de início da categoria. Seu formato é dd/mm/yyyy e seu conteúdo deve ser sempre  obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá receber  a data de início da categoria. Seu formato é dd/mm/yyyy e seu conteúdo deve ser sempre  obrigatório.]]></commentInRDBMS>
+<generatorID>89054EA5-6E14-7BD6-FBF1-CB9ECD4888CB</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_TERMINO" id="165335C5-B08B-769C-81B8-E2F29863D6AA">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá receber  a data de encerramento  da categoria. Seu formato é dd/mm/yyyy e seu conteúdo deve ser sempre  opcional. Conteúdo obrigatório significa que a categoria foi encerrada a partir da data término. Já o conteúdo opcional indica que a categoria está ativa e operante.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá receber  a data de encerramento  da categoria. Seu formato é dd/mm/yyyy e seu conteúdo deve ser sempre  opcional. Conteúdo obrigatório significa que a categoria foi encerrada a partir da data término. Já o conteúdo opcional indica que a categoria está ativa e operante.]]></commentInRDBMS>
+<generatorID>D71E4F87-E2C1-FA24-BC55-E54008AD1CC7</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_CATEGORIA" id="0406043A-F745-934B-9052-414D969474D2">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o stauts da categoria da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o stauts da categoria da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></commentInRDBMS>
+<generatorID>E7C378CD-D483-00E3-B0BC-8943897DED10</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3DE98171-F89C-58C3-9684-102EB21B68E5" name="MC_CATEGORIA_PROD_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:13:36 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>2A4D0FD6-1DC5-3FCF-ECFB-5E6FEE22384A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="3FE57BF9-9BAE-17DF-6918-3D7E7E2BAFA8" name="UN_MC_CAT_PROD_DS_CAT">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 19:43:50 UTC</createdTime>
+<generatorID>9196FC5E-D795-D210-2B43-7DC8D60EC426</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>45BCAC1A-062E-6323-1410-FA97EA6F8FE2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

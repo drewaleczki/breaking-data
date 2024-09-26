@@ -1,0 +1,96 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2AF134DE-F258-C319-33CA-90E07C8FD4E5" name="MC_LOGRADOURO">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<generatorID>8F74FFBE-B788-8FC3-51DC-3EDFC10258D8</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_LOUGRADOURO" id="18D94DCD-DFF3-A118-8D3B-5B8A01D6865F">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:47:18 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_BAIRRO" id="7371152F-8238-0FA4-8E76-4309D6D4857D">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:35:24 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do bairro e seu conteúdo é obrigatório.]]></comment>
+<generatorID>7B104515-F5D6-4C99-D015-F18AD3BF1954</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<referedAttribute>45F394DD-754B-A9A9-70D5-223E4E462BFF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_LOGRADOURO" id="F11DFE2D-3490-C2EF-100D-04125FCC74F3">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o nome do logradouro e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do logradouro e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>EF3D0E50-426B-3A52-61EA-199102161A1B</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>160</dataTypeSize>
+<ownDataTypeParameters>160,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_CEP" id="27842C43-66E8-F23C-C38C-A6A9AC7CA1B8">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o numero do CEP do Logradouro e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o numero do CEP do Logradouro e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>45D13374-FBBC-5414-3AC3-5F24FDFF6364</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="A5E77D19-72C3-D477-4B9D-5C70AB62B007" name="MC_LOGRADOURO_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:12:13 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>18D94DCD-DFF3-A118-8D3B-5B8A01D6865F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
