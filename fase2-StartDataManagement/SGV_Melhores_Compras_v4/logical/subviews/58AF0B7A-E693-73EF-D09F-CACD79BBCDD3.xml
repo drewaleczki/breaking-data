@@ -25,7 +25,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="205D7D9C-D480-F43E-FA4E-F7073BCC7BF0" otype="Entity" vid="F98404F8-675F-B25B-71AC-52BA57AC3A0C">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="67" y="525" width="280" height="158"/>
+<bounds x="431" y="633" width="280" height="158"/>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="221BA63E-3880-2E15-D3E2-66E087364C1B" otype="Entity" vid="79A5EBF4-5EEB-81F9-7022-C941765144EE">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -116,7 +116,10 @@ RM559403 - Thiago Evangelista Dias
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="3A20AA68-BFC8-F488-6813-D6E12EDCF561" otype="Entity" vid="C8D2BE10-B055-C7E4-7F1B-295AFEA49E0F">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="454" y="650" width="240" height="82"/>
+<bounds x="85" y="635" width="240" height="82"/>
+<useDefaultColor>false</useDefaultColor>
+<backgroundColor>-52</backgroundColor>
+<foregroundColor>-16776961</foregroundColor>
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="564526E6-9CE0-D03F-CD10-EE14A5EC0E29" otype="Entity" vid="34F4E9E2-A02D-653F-2261-81E71CC62799">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -297,8 +300,8 @@ RM559403 - Thiago Evangelista Dias
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="489" y="830"/>
-<point x="305" y="683"/>
+<point x="571" y="830"/>
+<point x="571" y="791"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="7B104515-F5D6-4C99-D015-F18AD3BF1954" otype="Relation" vid_source="BC089668-13D4-F506-AADD-9CE977A4D09A" vid_target="CF87FDE1-52D1-B5E0-7CDF-A8BC09981934">
@@ -396,8 +399,8 @@ RM559403 - Thiago Evangelista Dias
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="347" y="555"/>
-<point x="399" y="555"/>
+<point x="571" y="633"/>
+<point x="571" y="586"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="EA87DEB9-D441-D85C-5CB1-807135FC2D39" otype="Relation" vid_source="79CEC244-E7E9-A0CA-AE2A-CC836DE61929" vid_target="34F4E9E2-A02D-653F-2261-81E71CC62799">
@@ -414,8 +417,8 @@ RM559403 - Thiago Evangelista Dias
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="454" y="666"/>
-<point x="347" y="666"/>
+<point x="325" y="676"/>
+<point x="431" y="676"/>
 </points>
 </Connector>
 </connectors>

@@ -19,7 +19,7 @@
 <Attribute name="CD_CATEGORIA" id="2A4D0FD6-1DC5-3FCF-ECFB-5E6FEE22384A">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-13 17:11:25 UTC</createdTime>
-<commentInRDBMS><![CDATA[SEQUENCE ou  IDENTITY e crescente]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave primária da tabela de categoria de produtos da Melhorees Compras. Cada categoria nova cadastrada  será acionada a Sequence  SQ_MC_CATEGORIA que se encarregará de gerar o próximo número único da categoria.]]></commentInRDBMS>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
 <engineerTo>
 <item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
@@ -46,7 +46,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="TP_CATEGORIA" id="753491B9-EBF0-DC6E-B433-02D1832CC1A9">
 <createdBy>Patricia</createdBy>
