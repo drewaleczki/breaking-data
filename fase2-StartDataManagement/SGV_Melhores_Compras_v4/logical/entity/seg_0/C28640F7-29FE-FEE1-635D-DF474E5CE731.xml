@@ -16,7 +16,7 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="CD_CLIENTE" id="05176656-33F4-55D4-60E0-64B050645B6A">
+<Attribute name="NR_CLIENTE" id="05176656-33F4-55D4-60E0-64B050645B6A">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-13 16:32:59 UTC</createdTime>
 <comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>

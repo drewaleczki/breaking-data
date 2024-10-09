@@ -16,10 +16,11 @@
 <minVolumes>0</minVolumes>
 <normalForm>Third</normalForm>
 <attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
-<Attribute name="CD_CLIENTE" id="05177A18-F23B-DCBB-37A7-8FCAF7A2D7C3">
+<Attribute name="NR_CLIENTE" id="05177A18-F23B-DCBB-37A7-8FCAF7A2D7C3">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-13 16:30:43 UTC</createdTime>
 <comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna armazena o número do cliente Pessoa Física.]]></commentInRDBMS>
 <generatorID>466683DA-0709-A973-8D82-A75B04612415</generatorID>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
 <engineerTo>
@@ -30,7 +31,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DT_NASCIMENTO" id="0305579E-B32B-9891-EC79-16A76FA2A433">
 <createdBy>Patricia</createdBy>
