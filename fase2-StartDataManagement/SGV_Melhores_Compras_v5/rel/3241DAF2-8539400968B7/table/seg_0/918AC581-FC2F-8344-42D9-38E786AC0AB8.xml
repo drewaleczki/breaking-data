@@ -1,0 +1,282 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="918AC581-FC2F-8344-42D9-38E786AC0AB8" name="MC_FUNCIONARIO">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<generatorID>6EAD1423-1BA8-F7CD-80D9-627A9600F20B</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MC_FUNCIONARIO_ID" id="0FB111C2-AFAA-889B-93EC-4C3B43A5103D">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isSurrogateColumn>true</isSurrogateColumn>
+</Column>
+<Column name="CD_FUNCIONARIO" id="96A05215-821C-3E60-0160-FFFDD9429F54">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do funcionário e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo do funcionário e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>FF7C6449-9820-DE48-8797-FBE9BD2A5F43</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_DEPTO" id="D5D499F7-6CCF-5815-1462-02521A5E549F">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do departamento  e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna ira receber o código do departamento em que o funcionário trabalha.]]></commentInRDBMS>
+<generatorID>EA477094-4F63-9C63-6D68-FB8218D1C1F3</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="956C6D6A-B440-DBC3-53AB-D7D8CA194CE2" referredColumn="4FEBA536-4ED8-FEE2-3FA4-D9F5A2796A92"/>
+</associations>
+</Column>
+<Column name="CD_GERENTE" id="31371C29-D18D-38E0-56AF-5A30D76B02BE">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do gestor do funcionario trabalha  e seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo do gestor do funcionario e seu conteúdo é opcional.]]></commentInRDBMS>
+<generatorID>024C1058-2982-9596-B9B1-616B11ABA8D8</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E32D5B4F-F54F-C78E-487F-8DC5268DB676" referredColumn="96A05215-821C-3E60-0160-FFFDD9429F54"/>
+</associations>
+</Column>
+<Column name="NM_FUNCIONARIO" id="B274711D-E189-ADE9-BFB3-5EC269AEAF54">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o nome do funcionário e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do funcionário e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>C83EA96F-766D-B48F-249C-87C329D1E223</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>160</dataTypeSize>
+<ownDataTypeParameters>160,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPF_FUNCIONARIO" id="9C5B9482-09C2-2866-8E91-B632E2449F29">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna vai receber o identificador único de pessoa física, seu conteúdo deve ser único.]]></commentInRDBMS>
+<generatorID>2AB333E5-2932-3A93-788A-B85798F0B7B6</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_NASCIMENTO" id="9421434E-E23D-A0F6-B1F9-8B7FBA910303">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber a data de nascimento  do funcionário e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a data de nascimento  do funcionário e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>92CDCB6C-0576-DAC2-D6CC-7CE24CB165DE</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_TELEFONE_FUNC" id="3C3B2BF6-53B0-A5D3-D791-657AB84B5167">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna recebe o número de telefone do funcionário.	]]></commentInRDBMS>
+<generatorID>8280B7A3-9FD7-080A-D6C8-798C8D8793A4</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_EMAIL" id="F473B277-E5B6-814E-461E-5D9409798F81">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o email do funcionário e seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna recebe o e-mail do funcionário.]]></commentInRDBMS>
+<generatorID>EAF85722-90F8-8B86-C499-A62E25193E28</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FL_SEXO_BIOLOGICO" id="67D38692-45D4-CF07-2231-5CAF8CE7F26B">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o sexo biológico do funcionário e seu conteúdo é obrigatório.Os valores permitidos aqui seriam: (F)eminino; (M)asculino ou (Hermafrodita)]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o sexo biológico do funcionário e seu conteúdo é obrigatório.Os valores permitidos aqui seriam: (F)eminino; (M)asculino ou (Hermafrodita)]]></commentInRDBMS>
+<generatorID>8DDE1029-9A71-C54A-F8A8-A99B396470B8</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_CARGO" id="F16D7056-3E4B-1130-132C-3BB7BE2B0D1B">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o cargo do funcionário e seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna recebe o nome do cargo do funcionário.]]></commentInRDBMS>
+<generatorID>C64DC700-398D-EC3C-8552-062E771DFDBC</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VL_SALARIO" id="C4F362D3-2934-5AFE-BA85-6F34E7B5A6A5">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o valor do salário do funcionário e seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o valor do salário do funcionário e seu conteúdo é opcional.]]></commentInRDBMS>
+<generatorID>6DCC14FA-6BF5-9D33-ED78-EC8FF6887B18</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_FUNC" id="392B8B59-F379-A40E-07A1-C3866B33CBBD">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o stauts do funcionário da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o status do funcionário da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).]]></commentInRDBMS>
+<generatorID>A3D7C4B4-A87E-4F76-2E07-FD454A1C1261</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CADASTRAMENTO" id="D55BF541-DE25-BB35-C524-66430A89B487">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Data de cadastramento do Funcionario]]></comment>
+<commentInRDBMS><![CDATA[Data de cadastramento do Funcionario]]></commentInRDBMS>
+<generatorID>32103356-27F4-E454-74CC-A8D24EABBD01</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_DESLIGAMENTO" id="6F961DF0-529B-48EE-6352-820CF8BC3C5A">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<comment><![CDATA[Data de desligamento  do Funcionario. Seu conteúdo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Data de desligamento  do Funcionario. Seu conteúdo é opcional.]]></commentInRDBMS>
+<generatorID>4AD6DF41-69C4-CF71-87D2-D8877CE66480</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CA97B85-F299-0A40-21C9-40A9354070F5" name="MC_FUNCIONARIO_PK">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="0FB111C2-AFAA-889B-93EC-4C3B43A5103D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B1BE7726-122E-0B3C-1351-FE79F7851C59" name="UN_MC_FUNC_CD_FUNCIONARIO">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:26:03 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="96A05215-821C-3E60-0160-FFFDD9429F54"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38B780E4-30AC-7B78-0D04-0D4DD8081E44" name="UN_MC_FUNC_CPF_FUNCIONARIO">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<generatorID>3C17D0B6-3235-3782-9EBF-B876F3DCA705</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C5B9482-09C2-2866-8E91-B632E2449F29"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="086BEFC7-0664-4183-1E88-D0FD8DDC251D" name="FK_MC_DEPTO_CD_DEPTO">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<generatorID>CC0696A0-7E16-1FF9-5510-0DD681207006</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D5D499F7-6CCF-5815-1462-02521A5E549F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B6CFFADD-C860-469D-85DD-77B80B86B874" name="FK_MC_FUNC_SUPERIOR">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
+<generatorID>03B99994-7495-8935-12B3-3E276A283F3C</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="31371C29-D18D-38E0-56AF-5A30D76B02BE"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

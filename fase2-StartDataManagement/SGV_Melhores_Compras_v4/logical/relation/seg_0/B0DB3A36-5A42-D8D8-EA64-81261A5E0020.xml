@@ -6,9 +6,10 @@
 <engineerTo>
 <item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
 </engineerTo>
-<sourcePk>FB08FC44-F4E8-6F8B-9DD8-C1902D64A1CA</sourcePk>
-<identifying>true</identifying>
-<optionalSource>true</optionalSource>
+<sourcePk>3C17D0B6-3235-3782-9EBF-B876F3DCA705</sourcePk>
+<targetPk>D90D4F62-35A7-048D-4A60-9C00A10C4991</targetPk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
 <optionalTarget>false</optionalTarget>
 <sourceCardinality>1</sourceCardinality>
 <sourceEntity>6EAD1423-1BA8-F7CD-80D9-627A9600F20B</sourceEntity>

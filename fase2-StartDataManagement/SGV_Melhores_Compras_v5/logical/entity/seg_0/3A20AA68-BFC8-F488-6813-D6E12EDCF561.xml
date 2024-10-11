@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A20AA68-BFC8-F488-6813-D6E12EDCF561" name="MC_VIDEO_CLASS">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:43:11 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_CLASS" id="E59DEDF2-E857-C9C1-C8D9-D66AA11AED98">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:43:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna armazena o código de Classificação do vídeo.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_CLASS" id="B574F438-BE29-3040-CD58-C718F2D527F6">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:43:58 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna armazena a classificação do vídeo, podendo ser Vídeo de instalação do produto; Uso no cotidiano; Comercial com personalidade; entre outros. ]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="506BE656-379A-8290-BC8C-EC373B8E5908" name="MC_VIDEO_CLASS_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:43:42 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E59DEDF2-E857-C9C1-C8D9-D66AA11AED98</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

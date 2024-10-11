@@ -36,6 +36,7 @@
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 21:58:17 UTC</createdTime>
 <comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna recebe o identificador do cliente da tabela MC_CLIENTE.]]></commentInRDBMS>
 <generatorID>24395953-E24D-E2EC-6959-0BC21942BAD5</generatorID>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
 <engineerTo>
@@ -52,6 +53,7 @@
 <createdBy>renan</createdBy>
 <createdTime>2024-09-13 18:50:37 UTC</createdTime>
 <comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna recebe o código do produto da tabela MC_PRODUTO.]]></commentInRDBMS>
 <generatorID>B5A015B0-C7DA-0212-8F8F-20F244E79159</generatorID>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
 <engineerTo>
@@ -64,7 +66,7 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,,</ownDataTypeParameters>
 </Attribute>
-<Attribute name="CD_FUNCIONARIO1" id="BC56676A-0363-C185-D27F-09849C07C2EF">
+<Attribute name="CD_FUNCIONARIO11" id="BC56676A-0363-C185-D27F-09849C07C2EF">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-13 19:43:50 UTC</createdTime>
 <generatorID>4472B06A-D24B-9459-6D9C-D83507214909</generatorID>
@@ -254,6 +256,23 @@
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>2</dataTypePrecision>
 <ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_FUNCIONARIO" id="457F0F60-C7BB-CCD8-B63C-0145A3276E16">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:26:23 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do funcionário e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna recebe o Código do funcionário da tabela MC_FUNCIONARIO que está responsável pelo atendimento.]]></commentInRDBMS>
+<generatorID>8F0074CC-1AE9-1D93-4764-831D600098F5</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<referedAttribute>FF7C6449-9820-DE48-8797-FBE9BD2A5F43</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">

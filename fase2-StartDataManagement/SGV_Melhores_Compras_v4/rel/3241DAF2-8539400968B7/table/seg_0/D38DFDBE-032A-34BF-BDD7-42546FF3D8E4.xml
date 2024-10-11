@@ -8,10 +8,11 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CD_CLIENTE" id="D71F0021-F538-2B6C-5D2A-5BE1DA10D6EC">
+<Column name="NR_CLIENTE" id="D71F0021-F538-2B6C-5D2A-5BE1DA10D6EC">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna armazena o número do Cliente Pessoa Jurídica.]]></commentInRDBMS>
 <generatorID>A0766D5A-AFDC-4768-FD1F-92D66A89CD4F</generatorID>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -81,7 +82,7 @@
 <colUsage columnID="D71F0021-F538-2B6C-5D2A-5BE1DA10D6EC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="39F00946-08F8-876E-8A8C-102148A09E8C" name="FK_MC_CLIENTE_CD_CLIENTE">
+<ind_PK_UK id="39F00946-08F8-876E-8A8C-102148A09E8C" name="FK_MC_CLIENTE_MC_CLI_JURIDICA">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <generatorID>033D823D-ABFE-6CF1-4239-33EA51A7F354</generatorID>

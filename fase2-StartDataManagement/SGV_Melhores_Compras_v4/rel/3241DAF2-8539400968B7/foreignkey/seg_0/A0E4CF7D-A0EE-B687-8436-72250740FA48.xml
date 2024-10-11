@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A0E4CF7D-A0EE-B687-8436-72250740FA48" containerWithKeyObject="3E9DA93D-DFDA-FA07-A580-BCDD19AD9EB3" localFKIndex="1EE78F91-CFF4-CA77-6B84-861F70BD2384" name="FK_MC_VD_CD_VD_PROD">
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A0E4CF7D-A0EE-B687-8436-72250740FA48" containerWithKeyObject="3E9DA93D-DFDA-FA07-A580-BCDD19AD9EB3" localFKIndex="1EE78F91-CFF4-CA77-6B84-861F70BD2384" name="FK_MC_VIDEO_CD_VIDEO">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <generatorID>E1433CA7-CC4C-4F2F-DEBB-EE91BB634DA4</generatorID>

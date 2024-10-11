@@ -1,15 +1,15 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="792BC574-7F30-A61F-AE0B-8455297659B5" containerWithKeyObject="A15AECEF-6836-3B8E-C244-745543692ADF" localFKIndex="E9B742E3-7735-AD97-C975-FBB415784F57" name="FK_MC_CATPRO_CD_CAT">
-<createdBy>renan</createdBy>
-<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="58D7A0EC-C8FC-6AD1-C41C-5D179D936DCB" containerWithKeyObject="A15AECEF-6836-3B8E-C244-745543692ADF" localFKIndex="6C6D3CD0-EEE3-B8FA-E4D5-5DB41E1B975B" name="FK_MC_CATEG_PROD_CD_CATEGORIA">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
 <generatorID>EA87DEB9-D441-D85C-5CB1-807135FC2D39</generatorID>
-<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
 <referredTableLongName>MC_CATEGORIA_PROD</referredTableLongName>
 <deleteRule>NO ACTION</deleteRule>
 <referredTableID>12B9B850-C0CD-F1F8-D8B8-09F4904D7A00</referredTableID>
 <keyObject>3815B899-11E3-C7EE-C84B-6916F0AEA2E1</keyObject>
 <referredKeyID>3815B899-11E3-C7EE-C84B-6916F0AEA2E1</referredKeyID>
-<mandatory>true</mandatory>
+<mandatory>false</mandatory>
 <refColNames>CD_CATEGORIA</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>

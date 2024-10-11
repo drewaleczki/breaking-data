@@ -11,7 +11,7 @@
 <Column name="CD_CATEGORIA" id="3C981020-552D-A910-FF49-3119F5D88524">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
-<commentInRDBMS><![CDATA[SEQUENCE ou  IDENTITY e  crescente]]></commentInRDBMS>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave primária da tabela de categoria de produtos da Melhorees Compras. Cada categoria nova cadastrada  será acionada a Sequence  SQ_MC_CATEGORIA que se encarregará de gerar o próximo número único da categoria.]]></commentInRDBMS>
 <generatorID>2A4D0FD6-1DC5-3FCF-ECFB-5E6FEE22384A</generatorID>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
 <useDomainConstraints>false</useDomainConstraints>
@@ -20,6 +20,25 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_PRODUTO" id="B4CD7845-4B59-BFA3-2141-AAD9C77CB13D">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Nessa  coluna  será  armazenada o Código de produto, que pode ou não ter uma categoria.]]></commentInRDBMS>
+<generatorID>8DAA2156-53F0-4B46-D387-38CE79BC0267</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4AE6BBF4-674E-59BE-E994-B2D22474E623" referredColumn="793A12E7-840F-15FD-1FED-9B9FCD39711F"/>
+</associations>
 </Column>
 <Column name="TP_CATEGORIA" id="1FA52A18-B0E2-4214-5FA6-562766D5F60E">
 <createdBy>renan</createdBy>
@@ -104,15 +123,36 @@
 <colUsage columnID="3C981020-552D-A910-FF49-3119F5D88524"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="168F7179-3061-6EF9-1E84-70E6978A14F0" name="UN_MC_CAT_PROD_DS_CAT">
-<createdBy>renan</createdBy>
-<createdTime>2024-09-15 22:11:43 UTC</createdTime>
-<generatorID>3FE57BF9-9BAE-17DF-6918-3D7E7E2BAFA8</generatorID>
+<ind_PK_UK id="212A35AC-5BC6-ECD5-91D3-1008461DE821" name="UN_MC_CATEGORIA_PROD_DS_CATEGORIA">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:51:05 UTC</createdTime>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
 <indexState>Unique Constraint</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
 <colUsage columnID="DA37EF13-C57E-BDD7-E45A-D0FA129990D3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="66532508-D278-3688-8F58-B1AE33E5BC5C" name="MC_CATEGORIA_PROD__IDX">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EA87DEB9-D441-D85C-5CB1-807135FC2D39</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="B4CD7845-4B59-BFA3-2141-AAD9C77CB13D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ECAF3B8E-C713-2EE1-1941-D53C26E1D61C" name="FK_MC_PRODUTO_CD_PRODUTO">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
+<generatorID>EA87DEB9-D441-D85C-5CB1-807135FC2D39</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B4CD7845-4B59-BFA3-2141-AAD9C77CB13D"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

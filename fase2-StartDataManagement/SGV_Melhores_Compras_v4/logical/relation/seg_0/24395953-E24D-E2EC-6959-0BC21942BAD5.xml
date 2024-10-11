@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_CLIENTE_MC_SGV_SAC" directorySegmentName="seg_0" id="24395953-E24D-E2EC-6959-0BC21942BAD5">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_CLIENTE_NR_CLIENTE" directorySegmentName="seg_0" id="24395953-E24D-E2EC-6959-0BC21942BAD5">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-13 17:09:18 UTC</createdTime>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>

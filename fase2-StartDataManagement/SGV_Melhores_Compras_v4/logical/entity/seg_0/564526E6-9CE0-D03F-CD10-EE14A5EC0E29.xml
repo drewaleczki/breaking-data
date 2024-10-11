@@ -32,6 +32,22 @@
 <dataTypePrecision>10</dataTypePrecision>
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
+<Attribute name="CD_CATEGORIA" id="F66275BD-CB50-0E37-5DFC-75D535F2D487">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:18:27 UTC</createdTime>
+<generatorID>EA87DEB9-D441-D85C-5CB1-807135FC2D39</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>2A4D0FD6-1DC5-3FCF-ECFB-5E6FEE22384A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
 <Attribute name="NR_CD_BARRAS_PROD" id="AE65232E-9C24-EF90-3D89-DC1D826664C9">
 <createdBy>Patricia</createdBy>
 <createdTime>2024-06-11 22:37:55 UTC</createdTime>

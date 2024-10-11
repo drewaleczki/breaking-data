@@ -44,7 +44,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="CD_PRODUTO" id="DA98C48F-BD9A-A796-C179-4FCBAFE295F4">
 <createdBy>renan</createdBy>
@@ -61,7 +61,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="CD_VIDEO" id="AB3B4ECE-2FAA-02C9-ED51-F794F9C31B96">
 <createdBy>renan</createdBy>
@@ -77,7 +77,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
 </Attribute>
 <Attribute name="DT_HR_VISUAL" id="C8E2A725-49F0-FE92-6B08-AACA8D2C16AD">
 <createdBy>renan</createdBy>

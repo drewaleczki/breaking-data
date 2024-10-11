@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CD_CLIENTE" id="041C91B9-2FC8-4B66-D3AE-B608A4F9F083">
+<Column name="NR_CLIENTE" id="041C91B9-2FC8-4B66-D3AE-B608A4F9F083">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
@@ -18,7 +18,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -34,7 +34,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>5</dataTypePrecision>
-<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -127,18 +127,7 @@
 <colUsage columnID="041C91B9-2FC8-4B66-D3AE-B608A4F9F083"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="6ABB56E6-945F-D509-F4A8-CE1B8CA8F91F" name="MC_END_CLI__IDX">
-<createdBy>renan</createdBy>
-<createdTime>2024-09-15 22:11:43 UTC</createdTime>
-<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>8D970F58-4503-BC83-2752-E15C6CBA5758</relationGeneratorID>
-<indexColumnUsage>
-<colUsage columnID="93D00070-C608-FA6B-2BAE-30F953292B81"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="C49C6267-1587-BCFA-6AB3-AE5C5A7DF324" name="FK_MC_CLIENTE_CD_CLIENTEv3">
+<ind_PK_UK id="C49C6267-1587-BCFA-6AB3-AE5C5A7DF324" name="FK_MC_CLIENTE_MC_END_CLI">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <generatorID>BEA6C0D5-6DA8-8E59-3D85-E8F6313DF98E</generatorID>
@@ -149,7 +138,7 @@
 <colUsage columnID="041C91B9-2FC8-4B66-D3AE-B608A4F9F083"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="554A5D2B-1544-75F8-A902-0EE0450480EE" name="FK_MC_LOGRADOURO_CD_LOGRADOUROv2">
+<ind_PK_UK id="554A5D2B-1544-75F8-A902-0EE0450480EE" name="FK_MC_LOGRADOURO">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <generatorID>8D970F58-4503-BC83-2752-E15C6CBA5758</generatorID>

@@ -1,5 +1,5 @@
 <?xml version = '1.0' encoding = 'UTF-8'?>
-<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_PRODUTO_CD_PRODUTO" directorySegmentName="seg_0" id="B5A015B0-C7DA-0212-8F8F-20F244E79159">
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_PROD_CD_PRODUTO" directorySegmentName="seg_0" id="B5A015B0-C7DA-0212-8F8F-20F244E79159">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-13 18:50:37 UTC</createdTime>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>

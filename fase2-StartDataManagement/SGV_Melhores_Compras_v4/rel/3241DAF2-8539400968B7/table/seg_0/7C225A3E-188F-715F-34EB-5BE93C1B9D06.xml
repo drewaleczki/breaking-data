@@ -30,7 +30,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>8</dataTypePrecision>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -79,7 +79,7 @@
 <colUsage columnID="E951C60B-F221-DAB0-C386-D67678BCB74A"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5DC12CD3-93EC-4C3C-6F4B-9F906E6919AE" name="FK_MC_BAI_CD_BAI">
+<ind_PK_UK id="5DC12CD3-93EC-4C3C-6F4B-9F906E6919AE" name="FK_MC_BAIRRO">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <generatorID>7B104515-F5D6-4C99-D015-F18AD3BF1954</generatorID>
