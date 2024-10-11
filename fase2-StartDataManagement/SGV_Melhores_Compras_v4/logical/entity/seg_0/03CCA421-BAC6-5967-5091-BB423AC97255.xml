@@ -66,7 +66,7 @@
 </Attribute>
 </attributes>
 <identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
-<identifier id="732C9C6E-06DE-8879-2308-3D878977090C" name="MC_DEPTO_PK">
+<identifier id="732C9C6E-06DE-8879-2308-3D878977090C" name="PK_MC_DEPTO">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-13 16:16:00 UTC</createdTime>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
@@ -77,6 +77,32 @@
 <pk>true</pk>
 <usedAttributes>
 <attributeRef>7DDFB79F-4F6B-CE1D-7854-241305D04174</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="C2D2CAF5-0214-1C8B-7E3E-9F5FC41912BC" name="UN_MC_DEPTO_NOME">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:18:27 UTC</createdTime>
+<generatorID>753F23BC-F455-55D6-BF6E-B63F0F8D153A</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>810FEE3E-0F96-EA07-D693-280FF778FF08</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="E03FFE77-EA4A-F031-BDD5-842A02D1593C" name="UN_MC_DEPTO_SIGLA">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:18:27 UTC</createdTime>
+<generatorID>F45AD70F-6BEA-2F6A-D442-7738A3308B4D</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="false"/>
+</engineerTo>
+<usedAttributes>
+<attributeRef>000DC660-212A-494E-0869-E449FBFE0D84</attributeRef>
 </usedAttributes>
 </identifier>
 </identifiers>

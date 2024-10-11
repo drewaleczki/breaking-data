@@ -8,7 +8,7 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="CD_CLIENTE" id="357D9E66-6D60-7FC7-2416-40182E199D24">
+<Column name="NR_CLIENTE" id="357D9E66-6D60-7FC7-2416-40182E199D24">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>

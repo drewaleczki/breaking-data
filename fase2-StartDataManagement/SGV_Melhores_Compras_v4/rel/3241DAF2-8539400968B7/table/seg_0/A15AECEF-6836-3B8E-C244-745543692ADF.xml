@@ -22,12 +22,12 @@
 <ownDataTypeParameters>,10,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 </Column>
-<Column name="CD_CATEGORIA" id="6F11C20E-05D8-35B7-D3B0-C2DF5787363A">
-<createdBy>renan</createdBy>
-<createdTime>2024-09-15 22:11:43 UTC</createdTime>
-<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave de categoria de produtos da Melhorees Compras. ]]></commentInRDBMS>
-<generatorID>305F332A-BB65-54E4-30C8-1D3219744D24</generatorID>
+<Column name="CD_CATEGORIA" id="D19FC3BD-21B8-AEE6-9AC1-9A76F94FA808">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
+<generatorID>F66275BD-CB50-0E37-5DFC-75D535F2D487</generatorID>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
 <useDomainConstraints>false</useDomainConstraints>
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
@@ -36,7 +36,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="792BC574-7F30-A61F-AE0B-8455297659B5" referredColumn="3C981020-552D-A910-FF49-3119F5D88524"/>
+<colAssociation fkAssociation="58D7A0EC-C8FC-6AD1-C41C-5D179D936DCB" referredColumn="3C981020-552D-A910-FF49-3119F5D88524"/>
 </associations>
 </Column>
 <Column name="NR_CD_BARRAS_PROD" id="CC80A5A0-4948-9D6D-0588-574C122929A1">
@@ -167,15 +167,26 @@
 <colUsage columnID="52A07DC0-ED95-723D-A0E7-9022368424EC"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="E9B742E3-7735-AD97-C975-FBB415784F57" name="FK_MC_CATPRO_CD_CAT">
-<createdBy>renan</createdBy>
-<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<ind_PK_UK id="05D07CED-108F-32F1-23A1-5D2810E51BB3" name="MC_PRODUTO__IDX">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>EA87DEB9-D441-D85C-5CB1-807135FC2D39</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="D19FC3BD-21B8-AEE6-9AC1-9A76F94FA808"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6C6D3CD0-EEE3-B8FA-E4D5-5DB41E1B975B" name="FK_MC_CATEG_PROD_CD_CATEGORIA">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
 <generatorID>EA87DEB9-D441-D85C-5CB1-807135FC2D39</generatorID>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
 <indexState>Foreign Key</indexState>
 <isSurrogateKey>false</isSurrogateKey>
 <indexColumnUsage>
-<colUsage columnID="6F11C20E-05D8-35B7-D3B0-C2DF5787363A"/>
+<colUsage columnID="D19FC3BD-21B8-AEE6-9AC1-9A76F94FA808"/>
 </indexColumnUsage>
 </ind_PK_UK>
 </indexes>

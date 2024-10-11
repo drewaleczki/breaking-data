@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_FUNCIONARIO_CD_FUNCIONARIO" directorySegmentName="seg_0" id="B0DB3A36-5A42-D8D8-EA64-81261A5E0020">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 19:44:36 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<engineerTo>
+<item key="3241DAF2-5089-CD2F-A295-8539400968B7" value="true"/>
+</engineerTo>
+<sourcePk>3C17D0B6-3235-3782-9EBF-B876F3DCA705</sourcePk>
+<identifying>false</identifying>
+<optionalSource>false</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6EAD1423-1BA8-F7CD-80D9-627A9600F20B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9645F383-B531-0ABA-A679-278A12E013EF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

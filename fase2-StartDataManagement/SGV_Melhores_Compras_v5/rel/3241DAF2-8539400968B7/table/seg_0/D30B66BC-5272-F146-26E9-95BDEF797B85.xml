@@ -1,0 +1,52 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D30B66BC-5272-F146-26E9-95BDEF797B85" name="MC_VIDEO_CLASS">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<generatorID>3A20AA68-BFC8-F488-6813-D6E12EDCF561</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_CLASS" id="36088BE8-1B9B-61B9-1F7E-4A12A6DB750C">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna armazena o código de Classificação do vídeo.]]></commentInRDBMS>
+<generatorID>E59DEDF2-E857-C9C1-C8D9-D66AA11AED98</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_CLASS" id="D79C29AB-6980-BAE4-202C-70A26743E031">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna armazena a classificação do vídeo, podendo ser Vídeo de instalação do produto; Uso no cotidiano; Comercial com personalidade; entre outros. ]]></commentInRDBMS>
+<generatorID>B574F438-BE29-3040-CD58-C718F2D527F6</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DA68C35B-89A8-881B-12A2-B881D89656C2" name="MC_VIDEO_CLASS_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<generatorID>506BE656-379A-8290-BC8C-EC373B8E5908</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36088BE8-1B9B-61B9-1F7E-4A12A6DB750C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

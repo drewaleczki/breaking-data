@@ -22,7 +22,7 @@
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
-<colAssociation fkAssociation="8419985E-D5F0-AAA2-062D-161F4DA52B48" referredColumn="96A05215-821C-3E60-0160-FFFDD9429F54"/>
+<colAssociation fkAssociation="74BEEA8D-BB3C-8C45-4423-979DCBC367B3" referredColumn="96A05215-821C-3E60-0160-FFFDD9429F54"/>
 </associations>
 </Column>
 <Column name="CD_LOUGRADOURO" id="6317B546-0220-A814-A2A0-988AF8B01E62">
@@ -123,18 +123,7 @@
 <colUsage columnID="C3987241-15AA-F5F3-3DED-88C2DA6BCC14"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="5DA042CE-746D-1EF1-C624-07C08E693349" name="MC_END_FUNC__IDX">
-<createdBy>renan</createdBy>
-<createdTime>2024-09-15 22:11:43 UTC</createdTime>
-<ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
-<indexState>Unique Plain Index</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<relationGeneratorID>AF3DBFA2-4B88-C5A3-5D75-B8D093025FF8</relationGeneratorID>
-<indexColumnUsage>
-<colUsage columnID="6317B546-0220-A814-A2A0-988AF8B01E62"/>
-</indexColumnUsage>
-</ind_PK_UK>
-<ind_PK_UK id="DECF55F3-69D0-BC63-9778-191036578FF2" name="FK_MC_LOG_CD_LOG">
+<ind_PK_UK id="DECF55F3-69D0-BC63-9778-191036578FF2" name="MC_END_FUNC_MC_LOGRADOURO_FK">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <generatorID>AF3DBFA2-4B88-C5A3-5D75-B8D093025FF8</generatorID>
@@ -145,9 +134,9 @@
 <colUsage columnID="6317B546-0220-A814-A2A0-988AF8B01E62"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="7ED247C7-6BFB-85C0-CD27-228D1126ED65" name="FK_MC_FUNC_CD_FUNCv2">
-<createdBy>renan</createdBy>
-<createdTime>2024-09-15 22:11:43 UTC</createdTime>
+<ind_PK_UK id="374B03AC-742D-47C5-663D-A42A4D9A402D" name="FK_MC_FUNCIONARIO_CD_FUNCIONARIO">
+<createdBy>andrewaleczki</createdBy>
+<createdTime>2024-10-11 02:56:46 UTC</createdTime>
 <generatorID>B0DB3A36-5A42-D8D8-EA64-81261A5E0020</generatorID>
 <ownerDesignName>SGV_Melhores_Compras_v4</ownerDesignName>
 <indexState>Foreign Key</indexState>

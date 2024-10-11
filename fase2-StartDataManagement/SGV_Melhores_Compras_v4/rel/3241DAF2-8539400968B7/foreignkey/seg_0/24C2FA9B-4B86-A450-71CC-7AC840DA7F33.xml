@@ -10,7 +10,7 @@
 <keyObject>71A65EC1-FC90-0FB7-71FC-042E3DF9129A</keyObject>
 <referredKeyID>71A65EC1-FC90-0FB7-71FC-042E3DF9129A</referredKeyID>
 <mandatory>true</mandatory>
-<refColNames>CD_CLIENTE</refColNames>
+<refColNames>NR_CLIENTE</refColNames>
 <transferable>true</transferable>
 <rely>false</rely>
 <columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>

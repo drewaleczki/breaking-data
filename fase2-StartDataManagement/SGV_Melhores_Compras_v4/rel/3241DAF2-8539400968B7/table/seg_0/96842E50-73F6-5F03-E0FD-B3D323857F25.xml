@@ -96,7 +96,7 @@
 <colUsage columnID="A07583DD-4D36-A0A7-4145-66958E05BE73"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="CCCB1127-A741-EE13-5524-DA985BBCF57D" name="FK_MC_ESTADO_CD_ESTADO">
+<ind_PK_UK id="CCCB1127-A741-EE13-5524-DA985BBCF57D" name="FK_MC_ESTADO">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
 <generatorID>BF87F396-E100-79A7-5591-C9D58806F29F</generatorID>
