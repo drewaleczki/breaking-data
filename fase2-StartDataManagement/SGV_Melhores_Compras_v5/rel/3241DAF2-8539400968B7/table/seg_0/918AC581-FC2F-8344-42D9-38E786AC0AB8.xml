@@ -8,19 +8,6 @@
 <existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
 <parsed>true</parsed>
 <columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
-<Column name="MC_FUNCIONARIO_ID" id="0FB111C2-AFAA-889B-93EC-4C3B43A5103D">
-<createdBy>andrewaleczki</createdBy>
-<createdTime>2024-10-11 02:56:46 UTC</createdTime>
-<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
-<useDomainConstraints>false</useDomainConstraints>
-<use>1</use>
-<logicalDatatype>LOGDT019</logicalDatatype>
-<ownDataTypeParameters>,,</ownDataTypeParameters>
-<autoIncrementColumn>true</autoIncrementColumn>
-<identityColumn>true</identityColumn>
-<autoIncrementCycle>false</autoIncrementCycle>
-<isSurrogateColumn>true</isSurrogateColumn>
-</Column>
 <Column name="CD_FUNCIONARIO" id="96A05215-821C-3E60-0160-FFFDD9429F54">
 <createdBy>renan</createdBy>
 <createdTime>2024-09-15 22:11:43 UTC</createdTime>
@@ -46,7 +33,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>3</dataTypePrecision>
-<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <previousColumn>false</previousColumn>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
@@ -65,7 +52,7 @@
 <use>1</use>
 <logicalDatatype>LOGDT019</logicalDatatype>
 <dataTypePrecision>10</dataTypePrecision>
-<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
 <autoIncrementCycle>false</autoIncrementCycle>
 <associations>
 <colAssociation fkAssociation="E32D5B4F-F54F-C78E-487F-8DC5268DB676" referredColumn="96A05215-821C-3E60-0160-FFFDD9429F54"/>
@@ -232,7 +219,7 @@
 <pk>true</pk>
 <indexState>Primary Constraint</indexState>
 <indexColumnUsage>
-<colUsage columnID="0FB111C2-AFAA-889B-93EC-4C3B43A5103D"/>
+<colUsage columnID="96A05215-821C-3E60-0160-FFFDD9429F54"/>
 </indexColumnUsage>
 </ind_PK_UK>
 <ind_PK_UK id="B1BE7726-122E-0B3C-1351-FE79F7851C59" name="UN_MC_FUNC_CD_FUNCIONARIO">

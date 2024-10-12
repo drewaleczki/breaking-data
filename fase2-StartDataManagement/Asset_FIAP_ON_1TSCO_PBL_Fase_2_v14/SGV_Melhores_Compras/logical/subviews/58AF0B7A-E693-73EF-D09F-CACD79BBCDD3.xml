@@ -12,7 +12,7 @@
 <showGrid>false</showGrid>
 <diagramColor>-1</diagramColor>
 <display>false</display>
-<notation>1</notation>
+<notation>2</notation>
 <objectViews>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="2DE72A5A-586A-0324-C885-F4147EFDBF23" otype="Entity" vid="2394EB68-1FF4-1358-100E-3DAB6C9278BD">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
@@ -37,6 +37,7 @@
 <fontSize>28</fontSize>
 <fontStyle>1</fontStyle>
 <colorRGB>-1</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -46,7 +47,7 @@
 </OView>
 <OView class="oracle.dbtools.crest.swingui.logical.TVEntity" oid="4BD560D3-A63D-6CA6-7897-9B9715F39B91" otype="Entity" vid="F62D7925-EDD6-13C1-B87B-A9949E46761A">
 <hideElementsInCurrentOnly>false</hideElementsInCurrentOnly>
-<bounds x="117" y="742" width="246" height="227"/>
+<bounds x="96" y="738" width="246" height="227"/>
 <useCustomFormat>true</useCustomFormat>
 <useDefaultColor>false</useDefaultColor>
 <backgroundColor>-6697729</backgroundColor>
@@ -56,14 +57,22 @@
 <foType>Título</foType>
 <fontStyle>1</fontStyle>
 <colorRGB>-16776961</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 <FontObject>
 <foType>Atributo</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>3</foTypeID>
 </FontObject>
 <FontObject>
 <foType>NOT NULL</foType>
 <colorRGB>-65536</colorRGB>
+<foTypeID>10</foTypeID>
+</FontObject>
+<FontObject>
+<foType>Tipo de dados</foType>
+<colorRGB>-16744448</colorRGB>
+<foTypeID>5</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -103,14 +112,22 @@
 <foType>Título</foType>
 <fontStyle>1</fontStyle>
 <colorRGB>-16776961</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 <FontObject>
 <foType>Atributo</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>3</foTypeID>
 </FontObject>
 <FontObject>
 <foType>NOT NULL</foType>
 <colorRGB>-65536</colorRGB>
+<foTypeID>10</foTypeID>
+</FontObject>
+<FontObject>
+<foType>Tipo de dados</foType>
+<colorRGB>-16744448</colorRGB>
+<foTypeID>5</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -130,14 +147,27 @@
 <foType>Título</foType>
 <fontStyle>1</fontStyle>
 <colorRGB>-16776961</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 <FontObject>
 <foType>Atributo</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>3</foTypeID>
 </FontObject>
 <FontObject>
 <foType>NOT NULL</foType>
 <colorRGB>-65536</colorRGB>
+<foTypeID>10</foTypeID>
+</FontObject>
+<FontObject>
+<foType>Tipo de dados</foType>
+<colorRGB>-16744448</colorRGB>
+<foTypeID>5</foTypeID>
+</FontObject>
+<FontObject>
+<foType>Chave</foType>
+<colorRGB>-16777216</colorRGB>
+<foTypeID>6</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -161,14 +191,22 @@
 <foType>Título</foType>
 <fontStyle>1</fontStyle>
 <colorRGB>-16776961</colorRGB>
+<foTypeID>1</foTypeID>
 </FontObject>
 <FontObject>
 <foType>Atributo</foType>
 <colorRGB>-16777216</colorRGB>
+<foTypeID>3</foTypeID>
 </FontObject>
 <FontObject>
 <foType>NOT NULL</foType>
 <colorRGB>-65536</colorRGB>
+<foTypeID>10</foTypeID>
+</FontObject>
+<FontObject>
+<foType>Tipo de dados</foType>
+<colorRGB>-16744448</colorRGB>
+<foTypeID>5</foTypeID>
 </FontObject>
 </fonts>
 </OView>
@@ -215,8 +253,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="363" y="925"/>
-<point x="439" y="925"/>
+<point x="342" y="923"/>
+<point x="439" y="923"/>
 </points>
 </Connector>
 <Connector class="oracle.dbtools.crest.swingui.logical.TVRelation" oid="6D1B7567-568A-F1B6-3506-FACF235A18BD" otype="Relation" vid_source="2394EB68-1FF4-1358-100E-3DAB6C9278BD" vid_target="06B052B9-5FDB-11C0-A3F2-2024D0063F59">
@@ -344,8 +382,8 @@
 <backgroundColor>-16777216</backgroundColor>
 <lineWidth>1</lineWidth>
 <points>
-<point x="363" y="790"/>
-<point x="440" y="790"/>
+<point x="342" y="788"/>
+<point x="440" y="788"/>
 </points>
 </Connector>
 </connectors>

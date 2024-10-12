@@ -74,15 +74,5 @@
 <colUsage columnID="AEF40955-834A-1DF4-EDBE-7A7098A32FA4"/>
 </indexColumnUsage>
 </ind_PK_UK>
-<ind_PK_UK id="F45AD70F-6BEA-2F6A-D442-7738A3308B4D" name="UN_MC_DEPTO_SIGLA">
-<createdBy>andrewaleczki</createdBy>
-<createdTime>2024-09-24 21:30:32 UTC</createdTime>
-<ownerDesignName>SGV_Melhores_Compras_v5</ownerDesignName>
-<indexState>Unique Constraint</indexState>
-<isSurrogateKey>false</isSurrogateKey>
-<indexColumnUsage>
-<colUsage columnID="EA516EFA-D24D-45B8-6639-6BD98F7193FE"/>
-</indexColumnUsage>
-</ind_PK_UK>
 </indexes>
 </Table>
