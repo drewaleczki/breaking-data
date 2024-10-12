@@ -5,9 +5,14 @@ print("Bem vindo, poderia inserir os dados do produto abaixo\n")
 while opcao_Menu != 2:
 
     # Coletando os dados do produto
-    nm_produto = input("Insira o nome do produto: ")
-    vl_produto = float(input('Insira o valor do produto: '))
-    tp_embalagem = input('Insira o tipo de embalagem: ')
+    try:
+        nm_produto = input("Insira o nome do produto: ")
+        vl_produto = float(input('Insira o valor do produto: '))
+        tp_embalagem = input('Insira o tipo de embalagem: ')
+
+    except ValueError:
+        print("\nPor favor, insira um valor número no 'Valor do produto'")
+        vl_produto = float(input('Insira o valor do produto: '))
 
     # Armazenando os dados no produto em um dicionário
     produto = { 
@@ -20,7 +25,7 @@ while opcao_Menu != 2:
     print('\nProduto cadastrado !')
 
     # Calculando o ICMS
-    Calculo_ICMS = lambda vl_produto: f"O valor do imposto (ICMS) é {vl_produto * 0.18}"
+    Calculo_ICMS = lambda vl_produto: f"O valor do imposto (ICMS) é R$ {vl_produto * 0.18}"
     print(Calculo_ICMS(vl_produto))
 
     # Menu
