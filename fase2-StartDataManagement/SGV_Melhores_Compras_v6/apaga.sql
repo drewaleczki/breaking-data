@@ -1,0 +1,42 @@
+-- Gerado por Oracle SQL Developer Data Modeler 23.1.0.087.0806
+--   em:        2024-10-12 18:03:26 BRT
+--   site:      Oracle Database 21c
+--   tipo:      Oracle Database 21c
+
+
+
+DROP TABLE mc_bairro CASCADE CONSTRAINTS;
+
+DROP TABLE mc_categoria_prod CASCADE CONSTRAINTS;
+
+DROP TABLE mc_cidade CASCADE CONSTRAINTS;
+
+DROP TABLE mc_cli_fisica CASCADE CONSTRAINTS;
+
+DROP TABLE mc_cli_juridica CASCADE CONSTRAINTS;
+
+DROP TABLE mc_cliente CASCADE CONSTRAINTS;
+
+DROP TABLE mc_depto CASCADE CONSTRAINTS;
+
+DROP TABLE mc_end_cli CASCADE CONSTRAINTS;
+
+DROP TABLE mc_end_func CASCADE CONSTRAINTS;
+
+DROP TABLE mc_estado CASCADE CONSTRAINTS;
+
+DROP TABLE mc_funcionario CASCADE CONSTRAINTS;
+
+DROP TABLE mc_logradouro CASCADE CONSTRAINTS;
+
+DROP TABLE mc_produto CASCADE CONSTRAINTS;
+
+DROP TABLE mc_sgv_sac CASCADE CONSTRAINTS;
+
+DROP TABLE mc_video CASCADE CONSTRAINTS;
+
+DROP TABLE mc_visualizacao CASCADE CONSTRAINTS;
+
+-- predefined type, no DDL - MDSYS.SDO_GEOMETRY
+
+-- predefined type, no DDL - XMLTYPE

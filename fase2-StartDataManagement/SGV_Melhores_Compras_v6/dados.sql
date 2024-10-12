@@ -1,0 +1,305 @@
+--Inserindo registros na tabela mc_depto
+
+INSERT INTO MC_DEPTO (NM_DEPTO, ST_DEPTO) VALUES ('Comercial', 'A');
+INSERT INTO MC_DEPTO (nm_depto, st_depto) VALUES ('Financeiro', 'A');
+INSERT INTO MC_DEPTO (NM_DEPTO, ST_DEPTO) VALUES ('SAC', 'A');
+
+--Inserindo registros na tabela mc_cliente
+
+INSERT INTO MC_CLIENTE (
+    NM_CLIENTE, ST_CLIENTE, DS_EMAIL, NR_TELEFONE, NM_LOGIN, DS_SENHA)
+    
+    VALUES(
+    'Cristiano Ronaldo', 'A', 'cr7@mc.com', null, 'cr7', 'camisa7');
+    
+INSERT INTO MC_CLI_FISICA (
+    NR_CLIENTE, DT_NASCIMENTO, FL_SEXO_BIOLOGICO, DS_GENERO, NR_CPF)
+    VALUES (1, TO_DATE ('05-02-1985', 'DD-MM-YYYY'), 'M', null, '777.777.777-77');
+
+INSERT INTO MC_CLIENTE (
+    NM_CLIENTE, ST_CLIENTE, DS_EMAIL, NR_TELEFONE, NM_LOGIN, DS_SENHA)
+    
+    VALUES(
+    'Al-Nassr', 'A', 'alnassr@mc.com', null, 'alnassr', 'arabia');
+
+INSERT INTO MC_CLI_JURIDICA (
+    NR_CLIENTE, DT_FUNDACAO, NR_CNPJ, NR_INSCR_EST)
+    VALUES (
+    2, TO_DATE ('24-10-1955', 'DD-MM-YYYY'), '00.000.000/0001-07', null);
+    
+--Inserindo registros na tabela mc_funcionario
+
+INSERT INTO MC_FUNCIONARIO (
+    CD_DEPTO, CD_GERENTE, NM_FUNCIONARIO, CPF_FUNCIONARIO, DT_NASCIMENTO, 
+    NR_TELEFONE_FUNC, DS_EMAIL, FL_SEXO_BIOLOGICO, DS_CARGO, VL_SALARIO, ST_FUNC,
+    DT_CADASTRAMENTO, DT_DESLIGAMENTO)
+    VALUES(
+    1, null, 'Picolina Osorio Fortes', 12345678900, TO_DATE('10-04-1989', 'DD-MM-YYYY'), 11123456789, 'pic.fortes@mc.com', 'F', 'Gerente de Vendas', 11983.00, 'A', TO_DATE('13-01-2013', 'DD-MM-YYYY'), null);
+    
+INSERT INTO MC_FUNCIONARIO (
+    CD_DEPTO, CD_GERENTE, NM_FUNCIONARIO, CPF_FUNCIONARIO, DT_NASCIMENTO, 
+    NR_TELEFONE_FUNC, DS_EMAIL, FL_SEXO_BIOLOGICO, DS_CARGO, VL_SALARIO, ST_FUNC,
+    DT_CADASTRAMENTO, DT_DESLIGAMENTO)
+    VALUES(
+    1, 1, 'Rachel Karen Green', 12345678911, TO_DATE('05-05-1979', 'DD-MM-YYYY'), 11123456790, 'rachel.green@mc.com', 'F', 'Vendedor(a) V', 4867.55, 'A', TO_DATE('14-08-2019', 'DD-MM-YYYY'), null);
+    
+INSERT INTO MC_FUNCIONARIO (
+    CD_DEPTO, CD_GERENTE, NM_FUNCIONARIO, CPF_FUNCIONARIO, DT_NASCIMENTO, 
+    NR_TELEFONE_FUNC, DS_EMAIL, FL_SEXO_BIOLOGICO, DS_CARGO, VL_SALARIO, ST_FUNC,
+    DT_CADASTRAMENTO, DT_DESLIGAMENTO)
+    VALUES(
+    1, 1, 'Gavin Edward Mitchell', 12345678922, TO_DATE('08-08-1981', 'DD-MM-YYYY'), 11123452302, 'gavin.mitchell@mc.com', 'M', 'Vendedor(a) II', 3498.4, 'A', TO_DATE('04-09-2023', 'DD-MM-YYYY'), null);
+    
+INSERT INTO MC_FUNCIONARIO (
+    CD_DEPTO, CD_GERENTE, NM_FUNCIONARIO, CPF_FUNCIONARIO, DT_NASCIMENTO, 
+    NR_TELEFONE_FUNC, DS_EMAIL, FL_SEXO_BIOLOGICO, DS_CARGO, VL_SALARIO, ST_FUNC,
+    DT_CADASTRAMENTO, DT_DESLIGAMENTO)
+    VALUES(
+    2, null, 'Chandler Muriel Bing', 12345678933, TO_DATE('10-04-1978', 'DD-MM-YYYY'), 11124345330, 'chandler.bing@mc.com', 'M', 'Gerente Financeiro', 27023.89,
+    'A', TO_DATE('13-01-2013', 'DD-MM-YYYY'), null);
+
+INSERT INTO MC_FUNCIONARIO (
+    CD_DEPTO, CD_GERENTE, NM_FUNCIONARIO, CPF_FUNCIONARIO, DT_NASCIMENTO, 
+    NR_TELEFONE_FUNC, DS_EMAIL, FL_SEXO_BIOLOGICO, DS_CARGO, VL_SALARIO, ST_FUNC,
+    DT_CADASTRAMENTO, DT_DESLIGAMENTO)
+    VALUES(
+    2, 4, 'Michael Gary Scott', 12345677755, TO_DATE('09-09-1963', 'DD-MM-YYYY'), 11124332145, 'michael.scott@mc.com', 'M', 'Analista Financeiro Senior I', 12432.69,
+    'A', TO_DATE('28-02-2019', 'DD-MM-YYYY'), null);
+    
+INSERT INTO MC_FUNCIONARIO (
+    CD_DEPTO, CD_GERENTE, NM_FUNCIONARIO, CPF_FUNCIONARIO, DT_NASCIMENTO, 
+    NR_TELEFONE_FUNC, DS_EMAIL, FL_SEXO_BIOLOGICO, DS_CARGO, VL_SALARIO, ST_FUNC,
+    DT_CADASTRAMENTO, DT_DESLIGAMENTO)
+    VALUES(
+    2, 4, 'James Duncan Halpert', 57689177755, TO_DATE('16-03-1982', 'DD-MM-YYYY'), 11145321358, 'james.halpert@mc.com', 'M', 'Especialista Financeiro', 13008.55,
+    'A', TO_DATE('19-10-2019', 'DD-MM-YYYY'), null);
+    
+INSERT INTO MC_FUNCIONARIO (
+    CD_DEPTO, CD_GERENTE, NM_FUNCIONARIO, CPF_FUNCIONARIO, DT_NASCIMENTO, 
+    NR_TELEFONE_FUNC, DS_EMAIL, FL_SEXO_BIOLOGICO, DS_CARGO, VL_SALARIO, ST_FUNC,
+    DT_CADASTRAMENTO, DT_DESLIGAMENTO)
+    VALUES(
+    3, null, 'Pamela Morgan Halpert', 89759177465, TO_DATE('11-12-1981', 'DD-MM-YYYY'), 11132761558, 'pamela.halpert@mc.com', 'F', 'Gerente de SAC', 27023.89, 'A', TO_DATE('27-11-1019', 'DD-MM-YYYY'), null);
+    
+INSERT INTO MC_FUNCIONARIO (
+    CD_DEPTO, CD_GERENTE, NM_FUNCIONARIO, CPF_FUNCIONARIO, DT_NASCIMENTO, 
+    NR_TELEFONE_FUNC, DS_EMAIL, FL_SEXO_BIOLOGICO, DS_CARGO, VL_SALARIO, ST_FUNC,
+    DT_CADASTRAMENTO, DT_DESLIGAMENTO)
+    VALUES(
+    3, 7, 'Phoebe Buffay-Hannigan', 76549177465, TO_DATE('16-02-1985', 'DD-MM-YYYY'), 11546761576, 'phoebe.buffay@mc.com', 'F', 'Atendente IV', 4098.77, 'A', TO_DATE('30-06-2023', 'DD-MM-YYYY'), null);
+    
+INSERT INTO MC_FUNCIONARIO (
+    CD_DEPTO, CD_GERENTE, NM_FUNCIONARIO, CPF_FUNCIONARIO, DT_NASCIMENTO, 
+    NR_TELEFONE_FUNC, DS_EMAIL, FL_SEXO_BIOLOGICO, DS_CARGO, VL_SALARIO, ST_FUNC,
+    DT_CADASTRAMENTO, DT_DESLIGAMENTO)
+    VALUES(
+    3, 7, 'Joseph Francis Tribbiani', 85549177348, TO_DATE('09-01-1980', 'DD-MM-YYYY'), 11885561572, 'joseph.tribbiani@mc.com', 'F', 'Atendente IV', 4098.77, 'A', TO_DATE('30-06-2023', 'DD-MM-YYYY'), null);
+    
+--Inserindo registros na tabela mc_estado
+
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('SP', 'São Paulo');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('PI', 'Piauí');
+INSERT INTO MC_ESTADO (SG_ESTADO, NM_ESTADO) VALUES ('MG', 'Minas Gerais');
+
+-- Inserindo registros na tabela mc_cidade
+
+INSERT INTO MC_CIDADE (SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES ('SP', 'São Paulo', 3550308, 11);
+INSERT INTO MC_CIDADE (SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES ('SP', 'São Bernardo do Campo', 3548708, 11);
+INSERT INTO MC_CIDADE (SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES ('MG', 'Belo Horizonte', 3106200, 31);
+INSERT INTO MC_CIDADE (SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES ('MG', 'Juiz de Fora', 3136702, 32);
+INSERT INTO MC_CIDADE (SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES ('PI', 'Teresina', 2211001, 86);
+INSERT INTO MC_CIDADE (SG_ESTADO, NM_CIDADE, CD_IBGE, NR_DDD) VALUES ('PI', 'Cajueiro da Praia', 2202083, 86);
+
+-- Inserindo registros na tabela mc_bairro
+
+INSERT INTO MC_BAIRRO (CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES(1, 'Jardim Paulista', 'Oeste');
+INSERT INTO MC_BAIRRO (CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES(2, 'Jardim do Mar', 'Centro');
+INSERT INTO MC_BAIRRO (CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES(3, 'Santa Efigenia', null);
+INSERT INTO MC_BAIRRO (CD_CIDADE, NM_BAIRRO, NM_ZONA_BAIRRO) VALUES(4, 'Cascatinha', null);
+
+--Inserindo registros na tabela mc_logradouro
+
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES(1, 'Alameda Campinas', 01404000);
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES(1, 'Alameda Lorena', 01424007);
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES(2, 'Avenida Senador Vergueiro', 09750001);
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES(2, 'Avenida Índico', 09750601);
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES(3, 'Rua Amoras', 30260140);
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES(3, 'Avenida do Contorno', 30110014);
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES(4, 'Rua Francisco Vaz de Magalhães', 36033340);
+INSERT INTO MC_LOGRADOURO (CD_BAIRRO, NM_LOGRADOURO, NR_CEP) VALUES(4, 'Rua Joaquim Carneiro Filho', 36033320);
+
+--Inserindo registros na tabela mc_end_func
+INSERT INTO MC_END_FUNC (
+    CD_FUNCIONARIO,
+    CD_LOGRADOURO,
+    NR_END,
+    DS_COMPLEMENTO_END,
+    DT_INICIO,
+    DT_TERMINO,
+    ST_END) 
+VALUES(1, 3, 2099, null, TO_DATE('19-12-2022', 'DD-MM-YYYY'), null, 'A');
+
+INSERT INTO MC_END_FUNC (
+    CD_FUNCIONARIO,
+    CD_LOGRADOURO,
+    NR_END,
+    DS_COMPLEMENTO_END,
+    DT_INICIO,
+    DT_TERMINO,
+    ST_END) 
+VALUES(2, 1, 638, null, TO_DATE('14-08-2023', 'DD-MM-YYYY'), null, 'A');
+
+--Inserindo registros na tabela mc_categoria_prod (categorias de produtos)
+
+INSERT INTO MC_CATEGORIA_PROD(
+    TP_CATEGORIA,
+    DS_CATEGORIA,
+    DT_INICIO,
+    DT_TERMINO,
+    ST_CATEGORIA
+    )
+VALUES('P', 'Eletrônicos', TO_DATE('12-08-2015', 'DD-MM-YYYY'), null, 'A');
+
+INSERT INTO MC_CATEGORIA_PROD(
+    TP_CATEGORIA,
+    DS_CATEGORIA,
+    DT_INICIO,
+    DT_TERMINO,
+    ST_CATEGORIA
+    )
+VALUES('P', 'Esporte e Lazer', TO_DATE('14-08-2015', 'DD-MM-YYYY'), null, 'A');
+
+INSERT INTO MC_CATEGORIA_PROD(
+    TP_CATEGORIA,
+    DS_CATEGORIA,
+    DT_INICIO,
+    DT_TERMINO,
+    ST_CATEGORIA
+    )
+VALUES('P', 'Pet Shop', TO_DATE('22-08-2015', 'DD-MM-YYYY'), null, 'A');
+
+--Inserindo registros na tabela mc_produto
+
+INSERT INTO MC_PRODUTO(
+    CD_CATEGORIA,
+    NR_CD_BARRAS_PROD,
+    DS_PRODUTO,
+    VL_UNITARIO,
+    TP_EMBALAGEM,
+    ST_PRODUTO,
+    VL_PERC_LUCRO,
+    DS_COMPLETA_PROD
+    )
+VALUES(1, '846293756910', 'Notebool Dell Inspiron 15', 5879.99, null, 'A', null, 'Notebool Dell Inspiron 15 Intel Core i5 516MB SSD');
+
+INSERT INTO MC_PRODUTO(
+    CD_CATEGORIA,
+    NR_CD_BARRAS_PROD,
+    DS_PRODUTO,
+    VL_UNITARIO,
+    TP_EMBALAGEM,
+    ST_PRODUTO,
+    VL_PERC_LUCRO,
+    DS_COMPLETA_PROD
+    )
+VALUES(1, '071654853147', 'IPhone 13 256GB', 3879.99, null, 'A', null, 'Apple IPhone 13 256GB Meia-Noite 5G Tela 6,1 Câm. Traseira 12+12MP Frontal 12MP');
+
+INSERT INTO MC_PRODUTO(
+    CD_CATEGORIA,
+    NR_CD_BARRAS_PROD,
+    DS_PRODUTO,
+    VL_UNITARIO,
+    TP_EMBALAGEM,
+    ST_PRODUTO,
+    VL_PERC_LUCRO,
+    DS_COMPLETA_PROD
+    )
+VALUES(2, '54762558236', 'Bicicleta Aro 29 KRW Spotlight', 809.10, null, 'A', null, 'Bicicleta Aro 29 KRW Spotlight Alumínio 21 Velocidades Freio a Disco SX37');
+
+INSERT INTO MC_PRODUTO(
+    CD_CATEGORIA,
+    NR_CD_BARRAS_PROD,
+    DS_PRODUTO,
+    VL_UNITARIO,
+    TP_EMBALAGEM,
+    ST_PRODUTO,
+    VL_PERC_LUCRO,
+    DS_COMPLETA_PROD
+    )
+VALUES(2, '784449566321', 'Raquete de Tênis Babolat Pure Aero 98', 1504.95, null, 'A', null, 'Raquete de Tênis Babolat Pure Aero 98 16X20 305G - 2023 - Carlos Alcaraz (L3 (4 3/8))');
+
+INSERT INTO MC_PRODUTO(
+    CD_CATEGORIA,
+    NR_CD_BARRAS_PROD,
+    DS_PRODUTO,
+    VL_UNITARIO,
+    TP_EMBALAGEM,
+    ST_PRODUTO,
+    VL_PERC_LUCRO,
+    DS_COMPLETA_PROD
+    )
+VALUES(3, '455563214885', 'Ração Seca Felina Royal Canin Gastrointestinal Fibre Response 1.5kg', 288.99, null, 'A', null, 'Ração Seca Royal Canin Veterinary Diet Gastrointestinal Fibre Response Gatos com Doenças Intestinais');
+
+--Inserindo registros na tabela mc_categoria_prod (categorias de vÃ­deos)
+
+INSERT INTO MC_CATEGORIA_PROD(
+    TP_CATEGORIA,
+    DS_CATEGORIA,
+    DT_INICIO,
+    DT_TERMINO,
+    ST_CATEGORIA
+    )
+VALUES('V', 'Instalação do Produto', TO_DATE('25-08-2019', 'DD-MM-YYYY'), null, 'A');
+
+INSERT INTO MC_CATEGORIA_PROD(
+    TP_CATEGORIA,
+    DS_CATEGORIA,
+    DT_INICIO,
+    DT_TERMINO,
+    ST_CATEGORIA
+    )
+VALUES('V', 'Uso no cotidiano', TO_DATE('25-11-2019', 'DD-MM-YYYY'), null, 'A');
+
+--Inserindo registros na tabela mc_video
+
+INSERT INTO MC_VIDEO(
+    CD_PRODUTO,
+    NR_SEQUENCIA,
+    DS_VIDEO,
+    NR_DURACAO,
+    ST_VIDEO,
+    DT_CADASTRO,
+    VD_PRODUTO)
+VALUES(2, 1, 'Teste 1', 400, 'A', TO_DATE('25-11-2019', 'DD-MM-YYYY'), 'https://drive.google.com/drive/folders/1PUCWIQA7qOFJPPvv/montagem.mpeg4');
+
+INSERT INTO MC_VIDEO(
+    CD_PRODUTO,
+    NR_SEQUENCIA,
+    DS_VIDEO,
+    NR_DURACAO,
+    ST_VIDEO,
+    DT_CADASTRO,
+    VD_PRODUTO)
+VALUES(3, 2, 'Teste 2', 300, 'A', TO_DATE('24-11-2019', 'DD-MM-YYYY'), 'https://drive.google.com/drive/folders/1PUCWIQA7qOFJPPvv/usomarchas.mpeg4');
+
+--Inserindo registros na tabela mc_sgv_visualizacao_video
+
+INSERT INTO MC_VISUALIZACAO (
+    CD_VISUAL,
+    NR_CLIENTE,
+    CD_PRODUTO,
+    CD_VIDEO,
+    DT_HR_VISUAL,
+    ST_USUARIO
+    )
+VALUES(1, 1, 3, 1, TO_DATE('14-04-2024', 'DD-MM-YYYY'), 'A');
+
+INSERT INTO MC_VISUALIZACAO (
+    CD_VISUAL,
+    NR_CLIENTE,
+    CD_PRODUTO,
+    CD_VIDEO,
+    DT_HR_VISUAL,
+    ST_USUARIO
+    )
+VALUES(2, 1, 3, 2, TO_DATE('14-04-2024', 'DD-MM-YYYY'), 'A');
