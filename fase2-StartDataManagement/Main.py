@@ -19,6 +19,10 @@ while opcao_Menu != 2:
     }
     print('\nProduto cadastrado !')
 
+    # Calculando o ICMS
+    Calculo_ICMS = lambda vl_produto: f"O valor do imposto (ICMS) é {vl_produto * 0.18}"
+    print(Calculo_ICMS(vl_produto))
+
     # Menu
     opcao_Menu = int(input('''
 [1] - Cadastrar um novo produto
