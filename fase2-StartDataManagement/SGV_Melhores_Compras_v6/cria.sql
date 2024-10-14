@@ -181,7 +181,9 @@ COMMENT ON COLUMN mc_cliente.ds_senha IS
 
 ALTER TABLE mc_cliente ADD CONSTRAINT mc_cliente_pk PRIMARY KEY ( nr_cliente );
 
-ALTER TABLE mc_cliente ADD CONSTRAINT uk_mc_cliente_nome_cliente UNIQUE ( nm_cliente );
+ALTER TABLE mc_cliente ADD CONSTRAINT un_mc_cliente_login UNIQUE ( nm_login );
+
+ALTER TABLE mc_cliente ADD CONSTRAINT un_mc_cliente_nome_cliente UNIQUE ( nm_cliente );
 
 CREATE TABLE mc_depto (
     cd_depto NUMBER(3) GENERATED ALWAYS AS IDENTITY NOT NULL,
@@ -540,7 +542,7 @@ CREATE TABLE mc_visualizacao (
     nr_cliente   NUMBER(10) NOT NULL,
     cd_produto   NUMBER(10) NOT NULL,
     cd_video     NUMBER(5) NOT NULL,
-    dt_hr_visual DATE NOT NULL,
+    dt_hr_visual DATETIME NOT NULL,
     st_usuario   CHAR(1) NOT NULL
 );
 
