@@ -1,36 +1,108 @@
-opcao_Menu = 0
+'''
+FASE 2- Terceiro Desafio da Fase: Algoritmo Python
 
-print("Bem vindo, poderia inserir os dados do produto abaixo\n")
+DADOS DOS ALUNOS
 
-while opcao_Menu != 2:
+'''
 
-    # Coletando os dados do produto
-    try:
-        nm_produto = input("Insira o nome do produto: ")
-        vl_produto = float(input('Insira o valor do produto: '))
-        tp_embalagem = input('Insira o tipo de embalagem: ')
+# biblioteca JSON
+import json
 
-    except ValueError:
-        print("\nPor favor, insira um valor número no 'Valor do produto'")
-        vl_produto = float(input('Insira o valor do produto: '))
+# funcao lambda para calcular o ICMS
+calculo_ICMS = lambda valor: round(valor * 0.18, 2)
 
-    # Armazenando os dados no produto em um dicionário
-    produto = { 
-        "id": {
-        'Nome':nm_produto, 
-        'Valor':vl_produto,  
-        'tp_embalagem':tp_embalagem
+# lista para armazenar os produtos
+produtos = []
+
+# Códigos ANSI para cores
+CYAN = '\033[96m'
+YELLOW = '\033[93m'
+GREEN = '\033[92m'
+RED = '\033[91m'
+MAGENTA = '\033[95m'
+RESET = '\033[0m'  # Reseta a cor
+
+# primeiro contato
+print(f"{CYAN}Bem-vindo! Vamos cadastrar novos produtos!{RESET}\n")
+print(f"{RED}Para gerar o arquivo JSON é necessário cadastrar pelo menos 5 produtos, combinado?{RESET}\n\n")
+
+# executar ate que o usuario opte por sair
+resposta = 'sim'
+
+# enquanto nao escolher sair 
+while resposta=='sim':
+
+        # repetir bloco enquanto o usuario nao digitar uma descricao valida
+        while True:
+
+            try: 
+                # coletando os dados do produto
+                descricao   = input(F"{YELLOW}Insira a descrição do produto: {RESET}")
+
+                if len(descricao)<=0 or descricao==' ':
+                    raise ValueError
+                
+                break
+
+            # o campo valor do produto devera ter conter pelo menos 1 caracter
+            except ValueError:
+                print(f"{RED}\nErro: Por favor, insira pelo menos 1 caracter na descrição.\n {RESET}")
+
+
+        # repetir bloco enquanto o usuario nao digitar um valor numerico maior que 0
+        while True:
+
+            try:                
+
+                # o valor devera ser numerico
+                valor       = float(input(F"{YELLOW}Insira o valor do produto: {RESET}"))
+
+                # o valor deverá ser maior que zero para calcular o ICMS
+                if valor<=0:
+                    raise ValueError
+                
+                break
+
+            # o campo valor do produto devera ter valor numérico maior que 0 (ZERO)
+            except ValueError:
+                print(f"{RED}\nErro: Por favor, insira um valor numérico maior que 0 (ZERO), Ex: 1825.68. \n{RESET}")
+                
+
+        
+        embalagem   = input(F"{YELLOW}Insira o tipo de embalagem: {RESET}")
+
+        # o valor devera ser maior que zero para poder calcular o ICMS
+        if valor<=0:
+            raise ValueError
+
+        # calculando o ICMS
+        icms = calculo_ICMS(valor)
+
+        # armazenando os dados do produto
+        produto = {
+            "Descricao":    descricao,
+            "Valor":        valor,
+            "Embalagem":    embalagem,
+            "ICMS":         icms
         }
-    }
-    print('\nProduto cadastrado !')
+        produtos.append(produto)
 
-    # Calculando o ICMS
-    Calculo_ICMS = lambda vl_produto: f"O valor do imposto (ICMS) é R$ {vl_produto * 0.18}"
-    print(Calculo_ICMS(vl_produto))
+        # pergunta ao usuario se deseja continuar cadastrando
+        resposta = input(f"\n{CYAN}Deseja cadastrar um novo produto? (sim/não): {RESET}").strip().lower()
 
-    # Menu
-    opcao_Menu = int(input('''
-[1] - Cadastrar um novo produto
-[2] - Sair
-                       
-Escolha uma opção acima: '''))
+
+
+# verifica se há no minimo 5 produtos cadastrados
+if len(produtos) >= 5:
+
+
+    # salvando os dados no arquivo JSON
+    nome_arquivo = '1_5_arquivo_produto.json'
+    with open(nome_arquivo, 'w') as arquivo_json:
+        json.dump(produtos, arquivo_json, indent=4)
+
+    print(f"\nCadastro encerrado. {len(produtos)} produtos foram salvos no arquivo '{nome_arquivo}'.")
+
+else:
+
+    print(f"\nVocê cadastrou {len(produtos)} produto(s). O mínimo necessário é de 5 produtos para gerar o arquivo JSON.")
