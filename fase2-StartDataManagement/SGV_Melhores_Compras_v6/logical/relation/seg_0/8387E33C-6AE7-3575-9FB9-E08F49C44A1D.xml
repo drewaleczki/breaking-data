@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_CIDADE" directorySegmentName="seg_0" id="8387E33C-6AE7-3575-9FB9-E08F49C44A1D">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:37:19 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<sourcePk>85634F50-E023-F843-3517-FDDA5E112CD3</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D21A0D5B-DC85-DE84-F940-9207536747C0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>BFA7168A-C7EC-EC41-4C02-2F1C6E8E71CD</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

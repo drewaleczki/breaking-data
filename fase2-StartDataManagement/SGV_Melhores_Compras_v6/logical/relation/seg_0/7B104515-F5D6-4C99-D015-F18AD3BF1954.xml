@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_BAIRRO" directorySegmentName="seg_0" id="7B104515-F5D6-4C99-D015-F18AD3BF1954">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:35:24 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<sourcePk>9FDE40D3-2DA3-5544-E71D-8093ED7A9DF9</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>BFA7168A-C7EC-EC41-4C02-2F1C6E8E71CD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2AF134DE-F258-C319-33CA-90E07C8FD4E5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

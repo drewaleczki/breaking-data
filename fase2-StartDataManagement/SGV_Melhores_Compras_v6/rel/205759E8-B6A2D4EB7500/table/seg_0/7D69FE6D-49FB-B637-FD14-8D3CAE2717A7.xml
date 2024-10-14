@@ -1,0 +1,320 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7D69FE6D-49FB-B637-FD14-8D3CAE2717A7" name="MC_SGV_SAC">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>221BA63E-3880-2E15-D3E2-66E087364C1B</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NR_SAC" id="CC05F07E-020F-B724-440E-5E5E931A85E8">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de SAC de vídeo  da Melhorees Compras. A cada SAC cadastrado pelo cliente será acionada a Sequence  SQ_MC_SGV_SAC que se encarregará de gerar o próximo número único do chamado SAC feito pelo Cliente.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave primária da tabela de SAC de vídeo  da Melhorees Compras. A cada SAC cadastrado pelo cliente será acionada a Sequence  SQ_MC_SGV_SAC que se encarregará de gerar o próximo número único do chamado SAC feito pelo Cliente.]]></commentInRDBMS>
+<generatorID>C8CE258C-A5EC-71D3-68C6-F33760B81660</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_CLIENTE" id="36A87940-3D60-4F28-6EDD-A33525A1853E">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna recebe o identificador do cliente da tabela MC_CLIENTE.]]></commentInRDBMS>
+<generatorID>DD7AE285-0660-3AC9-08A9-4D1B4360ABEF</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="281AB230-BBD0-234B-77DA-3FB5E92F0758" referredColumn="44627835-617D-E35D-DDD7-1E9BB53116DB"/>
+</associations>
+</Column>
+<Column name="CD_FUNCIONARIO" id="10F83F6A-80EB-839C-51BF-C358CBC0C474">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do funcionário e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna recebe o Código do funcionário da tabela MC_FUNCIONARIO que está responsável pelo atendimento.]]></commentInRDBMS>
+<generatorID>457F0F60-C7BB-CCD8-B63C-0145A3276E16</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="9F398F7D-F427-6CD3-56FD-5CE08F711D03" referredColumn="118B72B1-0034-C1E7-85F7-8E334696F643"/>
+</associations>
+</Column>
+<Column name="CD_PRODUTO" id="FEA6E505-6454-6A1B-8DBD-867BF4786176">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna recebe o código do produto da tabela MC_PRODUTO.]]></commentInRDBMS>
+<generatorID>24F42F26-EAF2-5739-36F0-2CDE357A125F</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1ABD593C-BE84-0009-824C-37A2890DAE2F" referredColumn="676C54BF-5DF9-580F-CB97-D936AF247A21"/>
+</associations>
+</Column>
+<Column name="CD_FUNCIONARIO11" id="952057E8-FF91-5A9D-1C1C-F0B637C50D48">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>BC56676A-0363-C185-D27F-09849C07C2EF</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>11</dataTypePrecision>
+<ownDataTypeParameters>,11,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_DETALHADA_SAC" id="F02D4D6D-894B-117D-0080-0DC82138405A">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber a descrição completa do SAC aberto pelo cliente. Seu conteudo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber a descrição completa do SAC aberto pelo cliente. Seu conteudo deve ser obrigatório.]]></commentInRDBMS>
+<generatorID>0C6629A7-1463-4DB1-8657-B221167B894C</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ABERTURA_SAC" id="0C8993A1-F283-1B94-F252-01EAFEABD1BA">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber a data e horário do SAC aberto pelo cliente. Seu conteudo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber a data e horário do SAC aberto pelo cliente. Seu conteudo deve ser obrigatório.]]></commentInRDBMS>
+<generatorID>977AA993-B159-D123-4C54-6F97CC899816</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_CONCLUSAO" id="7BB8AA13-4798-D837-FF07-147204DDB853">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>DE182965-6224-AF17-4441-A4261C6D54E8</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HR_ABERTURA_SAC" id="BD4BE125-CFD9-CA61-2EA7-FE8FC388EAD3">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber a hora do SAC aberto pelo cliente. Seu conteudo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber a hora do SAC aberto pelo cliente. Seu conteudo deve ser obrigatório.]]></commentInRDBMS>
+<generatorID>E41EB31B-B5AA-AD63-CFEC-342D8701349A</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_ATENDIMENTO" id="F46F976D-9A99-C8B8-5341-919D7CEF2316">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber a data e horário do atendmiento SAC feita pelo funcionário da Melhores Compras. Seu conteudo deve ser opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber a data e horário do atendmiento SAC feita pelo funcionário da Melhores Compras. Seu conteudo deve ser opcional..]]></commentInRDBMS>
+<generatorID>2C745FB8-111A-409C-EA7C-17BEF929DACE</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="HR_ATENDIMENTO_SAC" id="B1DB644A-3CEE-71E7-2826-69307E419206">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber a hora do SAC do atendimento  feito  pelo funcionario da Melhores Compras. Seu conteudo deve ser opcional.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber a hora do SAC do atendimento  feito  pelo funcionario da Melhores Compras. Seu conteudo deve ser opcional.]]></commentInRDBMS>
+<generatorID>A0BC52E9-66A7-FE4B-A2A8-B64C70BBB3EB</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_TEMPO_TOTAL_SAC" id="31A717CD-5CEB-8EF1-4BEC-9E6CAC3B2D41">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber o tempo total em horas  (HH24) computado desde a abertura até a conclusão dele. A unidade de medida é horas, ou seja, em quantas horas o chamado foi concluído desde a sua abertura.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber o tempo total em horas  (HH24) computado desde a abertura até a conclusão dele. A unidade de medida é horas, ou seja, em quantas horas o chamado foi concluído desde a sua abertura.]]></commentInRDBMS>
+<generatorID>A89DA1F9-E3F8-08D6-3450-C48B85D56805</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_DETALHADA_RETORNO_SAC" id="60C0D20F-83B8-46EE-1F00-F32B3BCFFBC5">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber a descrição detalhada do retorno feito pelo funcionário a partir da solicitação do cliente. Seu conteúdo deve ser opcional e preenchido pelo funcionário..]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber a descrição detalhada do retorno feito pelo funcionário a partir da solicitação do cliente. Seu conteúdo deve ser opcional e preenchido pelo funcionário.]]></commentInRDBMS>
+<generatorID>A664DAA9-C067-1C1C-D07B-1FFD03B923BC</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>4000</dataTypeSize>
+<ownDataTypeParameters>4000,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TP_SAC" id="4A31738F-1425-807E-1987-8EC73972FA17">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber o TIPO  do chamado SAC aberto pelo cliente.  Seu conteúdo deve ser  obrigatório e os possíveis valores são: (S)ugestão; (R)eclamação;  (D)úvida ou  (E)logio.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber o TIPO  do chamado SAC aberto pelo cliente.  Seu conteúdo deve ser  obrigatório e os possíveis valores são: (S)ugestão; (D)úvida ou  (E)logio.]]></commentInRDBMS>
+<generatorID>46F2BC9F-614E-907D-6DF5-1266C621C975</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_SAC" id="A1395D24-8486-9923-AA28-C1E30F2A1183">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber o STATUS  do chamado SAC aberto pelo cliente.  Seu conteúdo deve ser  obrigatório e os possíveis valores são: (E)m Atendimento; (C)ancelado; (F)echado ou (X)Fechado com Insatisfação do cliente.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber o STATUS  do chamado SAC aberto pelo cliente.  Seu conteúdo deve ser  obrigatório e os possíveis valores são: (E)m Atendimento; (C)ancelado; (F)echado ou (X)Fechado com Insatisfação do cliente.]]></commentInRDBMS>
+<generatorID>13E89669-A81A-3398-B9FA-BA5F39E4305A</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NR_INDICE_SATISFACAO" id="68805ABA-E412-0A8F-209C-CA820790666D">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber o índice de satisfação, , computado como um valor simples de 1 a 10, onde 1 refere-se ao cliente menos satisfeito e 10 o cliente mais satisfeito. Esse índice de satisfação é opcional e informado pelo cliente ao final do atendimento.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber o índice de satisfação, , computado como um valor simples de 1 a 10, onde 1 refere-se ao cliente menos satisfeito e 10 o cliente mais satisfeito. Esse índice de satisfação é opcional e informado pelo cliente ao final do atendimento.]]></commentInRDBMS>
+<generatorID>BC553DBB-8D77-9CAA-A93E-AC1BA7C6B3C7</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D7F93967-8C89-FCDF-A246-A15805D6789E" name="MC_SGV_SAC_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>9F7CFEC3-565D-48B0-26C3-FF6C4E73E983</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="CC05F07E-020F-B724-440E-5E5E931A85E8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B806B9C9-1641-4BA7-3E57-2B7200C54FF6" name="FK_MC_CLIENTE_NR_CLIENTE">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>24395953-E24D-E2EC-6959-0BC21942BAD5</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="36A87940-3D60-4F28-6EDD-A33525A1853E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F72E0E6E-CCFF-A738-016F-837D5FE1D6D0" name="FK_MC_PROD_CD_PRODUTO">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>B5A015B0-C7DA-0212-8F8F-20F244E79159</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FEA6E505-6454-6A1B-8DBD-867BF4786176"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="37CBB3CE-692B-1CC4-87CB-FD107B2AC306" name="FK_MC_FUNC_CD_FUNCIONARIO">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 21:25:57 UTC</createdTime>
+<generatorID>8F0074CC-1AE9-1D93-4764-831D600098F5</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="10F83F6A-80EB-839C-51BF-C358CBC0C474"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_CLASS_CHAMADO" directorySegmentName="seg_0" id="81428CD7-EA8D-6503-1A94-B6EA9099F77C">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:52:43 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<rule><![CDATA[((DT_CONCLUSAO IS NOT NULL AND ST_SAC IN ('F', 'X', 'C') OR (DT_CONCLUSAO IS NULL AND ST_SAC IN ('A', 'E', 'C'))]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_DT_CHAMADO" directorySegmentName="seg_0" id="DC449DD0-5CEC-B55A-187E-792C6CA6E511">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:53:13 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<rule><![CDATA[DT_CONCLUSAO > DT_ATENDIMENTO and DT_ATENDIMENTO > DT_ABERTURA_SAC]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_IND_SATS" directorySegmentName="seg_0" id="FD39ADCD-8C81-9CFE-FFA0-A2F8E43E092E">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:53:42 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<rule><![CDATA[NR_INDICE_SATISFACAO > 0 and NR_INDICE_SATISFACAO <= 10]]></rule>
+</tableCheckConstraint>
+<tableCheckConstraint name="CK_TP_SAC" directorySegmentName="seg_0" id="60BE8C24-96D3-3DF2-B1B5-FB17BD75E245">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:54:05 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<rule><![CDATA[TP_SAC in ('S','R')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>

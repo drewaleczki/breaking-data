@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKArc class="oracle.dbtools.crest.model.design.relational.FKArc" directorySegmentName="seg_0" id="EEFDE6F8-6D58-7C7A-11BB-A451DB895223" name="Arc_2">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<mandatory>false</mandatory>
+<reverseArc>true</reverseArc>
+<table>BDE32982-6536-7634-E1F8-B1740FE0D209</table>
+<discriminatorColumn>44627835-617D-E35D-DDD7-1E9BB53116DB</discriminatorColumn>
+<fkeys>
+<fkeyID>3A464862-5297-52B5-CF7D-211C3809F565</fkeyID>
+<fkeyID>4851B4BA-A8AA-3CC4-C9C6-19CFF8FE6B1A</fkeyID>
+</fkeys>
+</FKArc>

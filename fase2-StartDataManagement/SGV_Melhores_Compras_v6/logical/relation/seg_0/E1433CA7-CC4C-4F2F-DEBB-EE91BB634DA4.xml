@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_VIDEO_CD_VIDEO" directorySegmentName="seg_0" id="E1433CA7-CC4C-4F2F-DEBB-EE91BB634DA4">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:46:34 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<sourcePk>2FDE0DF4-B125-8074-54E0-A6A66351BD22</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>205D7D9C-D480-F43E-FA4E-F7073BCC7BF0</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>FC5B13C3-49E4-1001-F344-331E23ACCACC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

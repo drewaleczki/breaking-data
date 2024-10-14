@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8224B4BD-58E8-B0E8-E62C-8EB181387887" name="MC_BAIRRO">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>BFA7168A-C7EC-EC41-4C02-2F1C6E8E71CD</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_BAIRRO" id="DC13D81E-1201-EA98-3804-ADB43EF7A03F">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do bairro e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo do bairro e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>45F394DD-754B-A9A9-70D5-223E4E462BFF</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CD_CIDADE" id="B58D7077-5A77-19C8-88FC-9268F43755CA">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo da cidade e seu conteúdo é obrigatório.]]></comment>
+<generatorID>4CB2E2BE-3964-706D-AC37-2BD99DBE7B02</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DFBBC87B-28F2-4D72-342D-CDC764888BCB" referredColumn="DC610672-42EA-2E42-D92E-D1635E1931F9"/>
+</associations>
+</Column>
+<Column name="NM_BAIRRO" id="EB31A862-8D72-D3CF-37A7-8DAA6AD75883">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber o nome do Bairro. Esse conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber o nome do Bairro. Esse conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>48688E7F-FCDF-8CD0-5C37-01C5684190ED</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_ZONA_BAIRRO" id="E6BB9564-BF8B-CF2E-B7B0-B46CE749AC38">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber a localização da zona onde se encontra o bairro. Alguns exemplos: Zona Norte, Zona Sul, Zona Leste, Zona Oeste, Centro.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a localização da zona onde se encontra o bairro. Alguns exemplos: Zona Norte, Zona Sul, Zona Leste, Zona Oeste, Centro.]]></commentInRDBMS>
+<generatorID>867E7130-1AAF-8065-5ADC-F5A660839873</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7F6DF38F-D58C-2361-6141-C6B005EA4FF6" name="MC_BAIRRO_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>9FDE40D3-2DA3-5544-E71D-8093ED7A9DF9</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DC13D81E-1201-EA98-3804-ADB43EF7A03F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C8D7761C-3C48-5087-98A5-1A3FF4B89F45" name="FK_MC_CIDADE">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>8387E33C-6AE7-3575-9FB9-E08F49C44A1D</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B58D7077-5A77-19C8-88FC-9268F43755CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

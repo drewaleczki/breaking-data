@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="796AFD33-3546-C236-BD1B-4BE3F2AF21F0" name="MC_DEPTO">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>03CCA421-BAC6-5967-5091-BB423AC97255</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_DEPTO" id="90CDB8D4-DFD5-EA5B-4CDE-9FEE0D76E7B2">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do departamento  e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo do departamento  e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>7DDFB79F-4F6B-CE1D-7854-241305D04174</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NM_DEPTO" id="B5E44CFD-7FB0-8159-2219-B3F5FDF6B2DD">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o nome do  departamento  e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o nome do  departamento  e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>810FEE3E-0F96-EA07-D693-280FF778FF08</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100</dataTypeSize>
+<ownDataTypeParameters>100,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_DEPTO" id="6971035A-E4DE-776A-16E6-27C3DC3EE916">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o status do  departamento  e seu conteúdo é obrigatório. Os valores possíveis são: (A)tivo e (I)nativo.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o status do  departamento  e seu conteúdo é obrigatório. Os valores possíveis são: (A)tivo e (I)nativo.]]></commentInRDBMS>
+<generatorID>000DC660-212A-494E-0869-E449FBFE0D84</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9C57A6B2-EE91-B8FF-D1F6-A10F8D987EC7" name="PK_MC_DEPTO">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>732C9C6E-06DE-8879-2308-3D878977090C</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="90CDB8D4-DFD5-EA5B-4CDE-9FEE0D76E7B2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69D9A40D-B85C-5E79-E314-E7CB7AD5219A" name="UN_MC_DEPTO_NOME">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>C2D2CAF5-0214-1C8B-7E3E-9F5FC41912BC</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B5E44CFD-7FB0-8159-2219-B3F5FDF6B2DD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7444FD5E-2AEF-8F33-6D6B-59951CF876A9" name="UN_MC_DEPTO_SIGLA">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 21:25:57 UTC</createdTime>
+<generatorID>E03FFE77-EA4A-F031-BDD5-842A02D1593C</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6971035A-E4DE-776A-16E6-27C3DC3EE916"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+<tableCheckConstraints itemClass="oracle.dbtools.crest.model.design.constraint.TableLevelConstraint">
+<tableCheckConstraint name="CK_STATUS_DEPTO" directorySegmentName="seg_0" id="9BCC2D9E-DE44-B4DB-8C50-253AAA09CD50">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:46:47 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v6</ownerDesignName>
+<rule><![CDATA[ST_DEPTO IN ('A', 'I')]]></rule>
+</tableCheckConstraint>
+</tableCheckConstraints>
+</Table>
