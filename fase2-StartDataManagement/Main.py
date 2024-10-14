@@ -8,29 +8,37 @@ DADOS DOS ALUNOS
 # biblioteca JSON
 import json
 
+
 # funcao lambda para calcular o ICMS
 calculo_ICMS = lambda valor: round(valor * 0.18, 2)
+
 
 # lista para armazenar os produtos
 produtos = []
 
-# Códigos ANSI para cores
+
+# codigos ANSI para cores
 CYAN = '\033[96m'
 YELLOW = '\033[93m'
 GREEN = '\033[92m'
 RED = '\033[91m'
 MAGENTA = '\033[95m'
-RESET = '\033[0m'  # Reseta a cor
+RESET = '\033[0m'  # reseta a cor
+
 
 # primeiro contato
 print(f"{CYAN}Bem-vindo! Vamos cadastrar novos produtos!{RESET}\n")
 print(f"{RED}Para gerar o arquivo JSON é necessário cadastrar pelo menos 5 produtos, combinado?{RESET}\n\n")
 
+
 # executar ate que o usuario opte por sair
 resposta = 'sim'
 
-# enquanto nao escolher sair 
+
+# enquanto nao sair
 while resposta=='sim':
+
+
 
         # repetir bloco enquanto o usuario nao digitar uma descricao valida
         while True:
@@ -49,6 +57,7 @@ while resposta=='sim':
                 print(f"{RED}\nErro: Por favor, insira pelo menos 1 caracter na descrição.\n {RESET}")
 
 
+
         # repetir bloco enquanto o usuario nao digitar um valor numerico maior que 0
         while True:
 
@@ -63,17 +72,13 @@ while resposta=='sim':
                 
                 break
 
-            # o campo valor do produto devera ter valor numérico maior que 0 (ZERO)
+            # o campo valor do produto devera ter valor numerico maior que 0 (ZERO)
             except ValueError:
                 print(f"{RED}\nErro: Por favor, insira um valor numérico maior que 0 (ZERO), Ex: 1825.68. \n{RESET}")
-                
 
-        
+
+
         embalagem   = input(F"{YELLOW}Insira o tipo de embalagem: {RESET}")
-
-        # o valor devera ser maior que zero para poder calcular o ICMS
-        if valor<=0:
-            raise ValueError
 
         # calculando o ICMS
         icms = calculo_ICMS(valor)
@@ -92,9 +97,8 @@ while resposta=='sim':
 
 
 
-# verifica se há no minimo 5 produtos cadastrados
+# verifica se ha no minimo 5 produtos cadastrados
 if len(produtos) >= 5:
-
 
     # salvando os dados no arquivo JSON
     nome_arquivo = '1_5_arquivo_produto.json'
