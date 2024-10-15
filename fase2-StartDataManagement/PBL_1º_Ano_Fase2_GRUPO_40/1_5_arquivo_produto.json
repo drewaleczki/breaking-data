@@ -1,0 +1,32 @@
+[
+    {
+        "descricao": "Notebool Dell Inspiron 15",
+        "valor": 5879.99,
+        "tp_embalagem": null,
+        "icms": 1058.3981999999999
+    },
+    {
+        "descricao": "IPhone 13 256GB",
+        "valor": 3879.99,
+        "tp_embalagem": null,
+        "icms": 698.3982
+    },
+    {
+        "descricao": "Bicicleta Aro 29 KRW Spotlight",
+        "valor": 809.1,
+        "tp_embalagem": null,
+        "icms": 145.638
+    },
+    {
+        "descricao": "Raquete de T\u00eanis Babolat Pure Aero 98",
+        "valor": 1504.95,
+        "tp_embalagem": null,
+        "icms": 270.891
+    },
+    {
+        "descricao": "Ra\u00e7\u00e3o Seca Felina Royal Canin Gastrointestinal Fibre Response 1.5kg",
+        "valor": 288.99,
+        "tp_embalagem": null,
+        "icms": 52.0182
+    }
+]
