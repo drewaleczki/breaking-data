@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="D012DCC6-B96A-1E96-CD06-593609E2A4EC" containerWithKeyObject="300518BA-B29B-2267-E52F-40C906C3EA23" localFKIndex="B5CDFD36-0C3C-FF38-D54E-D7D94B185B6E" name="FK_MC_END_FUNC">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-21 11:36:16 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<referredTableLongName>MC_FUNCIONARIO</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>97801851-F919-CA27-8414-D96ADF5D9334</referredTableID>
+<keyObject>2E7A5AEC-5A30-2F56-E27B-B4E29C2C455E</keyObject>
+<referredKeyID>2E7A5AEC-5A30-2F56-E27B-B4E29C2C455E</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_FUNCIONARIO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

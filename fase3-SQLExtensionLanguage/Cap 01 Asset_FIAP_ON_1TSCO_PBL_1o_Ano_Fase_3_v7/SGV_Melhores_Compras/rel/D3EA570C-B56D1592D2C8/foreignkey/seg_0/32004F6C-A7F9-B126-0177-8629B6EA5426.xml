@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="32004F6C-A7F9-B126-0177-8629B6EA5426" containerWithKeyObject="BE2F9C25-8722-CA4D-62A4-98772F4DE0E1" localFKIndex="42666002-F8E0-B473-C0DA-C7F8BB1A06F8" name="FK_MC_CLIENTE_JURIDICA">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:42:59 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<referredTableLongName>MC_CLIENTE</referredTableLongName>
+<arc>7CEF4035-39C7-9CEA-86E6-D19FA7A25E51</arc>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>AE252E86-E6B4-F95D-B94E-635EEF764C2F</referredTableID>
+<keyObject>CFA51A98-7B3F-4A2E-FF67-49BA1CB91F50</keyObject>
+<referredKeyID>CFA51A98-7B3F-4A2E-FF67-49BA1CB91F50</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>NR_CLIENTE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<discriminatorValue>NR_CLIENTE</discriminatorValue>
+<columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,44 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DB_LOGRADOURO" directorySegmentName="seg_0" id="8F74FFBE-B788-8FC3-51DC-3EDFC10258D8">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:45:19 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<logging>YES</logging>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CD_BAIRRO" id="01302FF4-A778-B502-2F58-B005BA54DEBC">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_CEP" id="45D13374-FBBC-5414-3AC3-5F24FDFF6364">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:47:34 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_LOGRADOURO" id="51EAD6C8-13E9-822F-A496-BA3F45BB445A">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:47:34 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NM_LOGRADOURO" id="EF3D0E50-426B-3A52-61EA-199102161A1B">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:47:34 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_DB_LOGRADOURO_BAIRRO" id="50CCAAAB-6712-86F1-7489-4885B925F172">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DB_LOGRADOURO" id="E3EBD966-11D8-EF12-7903-1F170D9B066D">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:47:34 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexSort>NO</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

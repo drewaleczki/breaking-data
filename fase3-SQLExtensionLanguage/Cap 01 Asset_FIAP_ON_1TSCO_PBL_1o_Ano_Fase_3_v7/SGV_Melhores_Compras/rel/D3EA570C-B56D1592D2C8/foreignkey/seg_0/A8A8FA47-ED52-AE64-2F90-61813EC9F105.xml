@@ -1,0 +1,16 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="A8A8FA47-ED52-AE64-2F90-61813EC9F105" containerWithKeyObject="300518BA-B29B-2267-E52F-40C906C3EA23" localFKIndex="4EC79B77-64F4-B8E5-4E4C-8290BE16FEA0" name="FK_MC_END_FUNC_LOGRADOURO">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-21 11:36:23 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<referredTableLongName>MC_LOGRADOURO</referredTableLongName>
+<deleteRule>RESTRICT</deleteRule>
+<referredTableID>8F74FFBE-B788-8FC3-51DC-3EDFC10258D8</referredTableID>
+<keyObject>E3EBD966-11D8-EF12-7903-1F170D9B066D</keyObject>
+<referredKeyID>E3EBD966-11D8-EF12-7903-1F170D9B066D</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>CD_LOGRADOURO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>false</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

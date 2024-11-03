@@ -1,0 +1,46 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MC_CATEGORIA_PROD" directorySegmentName="seg_0" id="F56410BD-5D00-30FD-AE2A-449C52BFDAFF">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DS_CATEGORIA_PROD" id="547AFB54-22C4-DF80-6C82-485F47103D48">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_CATEGORIA_PROD" id="6FE4DFF9-F6D8-9A94-47FB-72B7C42C199F">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_INICIO" id="89054EA5-6E14-7BD6-FBF1-CB9ECD4888CB">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 13:36:15 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_TERMINO" id="D71E4F87-E2C1-FA24-BC55-E54008AD1CC7">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 13:37:43 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_CATEGORIA" id="E7C378CD-D483-00E3-B0BC-8943897DED10">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_MC_CATEGORIA" id="98187F79-33B0-C605-C10A-8CF718A89D87">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
