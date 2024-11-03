@@ -1,0 +1,108 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MC_SGV_SAC" directorySegmentName="seg_0" id="6EAECA94-FFFC-0CF5-AD7B-BE26D785E934">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="DT_ATENDIMENTO" id="00F3FFE8-16F6-2655-5C0C-081240B7182C">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:00:35 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_CLIENTE" id="09A233D4-7A11-519D-B0B1-F2A49480F0E7">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:23:15 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_PRODUTO" id="1F13CC79-7AEE-D280-0FF0-1EC8842CCA53">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:09:02 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_TEMPO_TOTAL_SAC" id="3DC396B8-B6D0-F664-58DB-AE49F03180CF">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:05:04 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_SAC" id="3F5E44DB-3C93-61FE-A09F-2829DD3E6358">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:03:50 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_INDICE_SATISFACAO" id="7A7FFBE6-5B17-1D87-7EBC-5C1DD8E94F8C">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:06:46 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HR_ABERTURA_SAC" id="834ABEFD-BF26-00D8-F3C2-D3570CBDB66E">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:00:35 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="HR_ATENDIMENTO_SAC" id="8F5D878A-6433-861D-A16B-20EFC958BA80">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:00:35 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_FUNCIONARIO" id="9B1C10A8-AE8A-B55A-7111-8A418BE32418">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:23:52 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_SAC" id="ACC2AA78-7571-5642-14AC-B4576325EBBF">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_DETALHADA_SAC" id="BB4F13AC-3E6A-A0A4-BA4B-91F3470D600C">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TP_SAC" id="DAD7689D-BC9D-0E87-A288-8F3B277B6B29">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_DETALHADA_RETORNO_SAC" id="EB520E79-BD3C-B48C-A9BB-DE51CFDE79B4">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:10:53 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_ABERTURA_SAC" id="F7D69A86-C801-03A8-F870-79FAD9A0D89E">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 13:49:37 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MC_FUNCIONARIO_SGV_SAC" id="0DCAC221-68DD-EDA3-DBBD-5325B46622F5">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:23:52 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MC_CLIENTE_SGV_SAC" id="D31AD881-B516-1867-5B57-E1B2F7CE0D29">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:23:15 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_MC_PRODUTO_SGV_SAC" id="E8713BB1-8AF4-2929-5249-6ADB5427D002">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 14:09:02 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_MC_SGV_SAC" id="3654E18C-26BA-76CA-D1E3-FEB689A1B67A">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
