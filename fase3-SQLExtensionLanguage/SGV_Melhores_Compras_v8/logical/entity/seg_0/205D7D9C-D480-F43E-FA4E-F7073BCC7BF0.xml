@@ -1,0 +1,151 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="205D7D9C-D480-F43E-FA4E-F7073BCC7BF0" name="MC_VIDEO">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:39:40 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_PRODUTO" id="99075E98-D8DA-BEC4-9587-C0C14F7A6CEF">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:44:34 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.]]></comment>
+<commentInRDBMS><![CDATA[Nessa  coluna  será  armazenada o Código de produto, que pode ter nenhum ou vários vídeos associados e cada vídeo somente pode ser exibido caso seu status (ST_VIDEO) esteja em “A” (ativo). ]]></commentInRDBMS>
+<generatorID>59570F95-13D4-3AE3-1DC8-E63707EF1242</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<referedAttribute>2D0729E2-3896-A8CB-8ECB-8D20F972A898</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_CLASS" id="0933EC54-618B-90CF-759C-D68BC8B3A579">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 21:25:12 UTC</createdTime>
+<generatorID>7C9C04E1-8A65-D06F-7F96-8B80FA038AD9</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>E59DEDF2-E857-C9C1-C8D9-D66AA11AED98</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_SEQUENCIA" id="610988ED-227C-EBB1-946C-C0D476E1627F">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:39:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a sequencia do vídeo a partir do codigo do produto. Sempre o primeiro vídeo de determinado  produto deve iniciar com o número 1. Seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS_VIDEO" id="7D47A571-E3A3-D7E5-0C30-98DF9BCC4AAD">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:40:04 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna armazena a descrição sobre o vídeo.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR_DURACAO" id="C3A1A2F1-81E8-68FA-DF35-1C47C691F816">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:40:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna armazena a duração do vídeo em segundos.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST_VIDEO" id="335071ED-FAFA-9020-3354-52D2B11B4793">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:41:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna armazena o Status do video, podendo ser A(tivo)  ou I(nativo). Vídeos inativo não podem ser visualizados.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT_CADASTRO" id="EB64B85C-1B4C-74FF-FD8A-9095C30E44E1">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:41:42 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna armazena a data em que o vídeo foi cadastrado.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VD_PRODUTO" id="A6D7CC1E-ABCB-8881-39F3-AC972FD87376">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 21:24:52 UTC</createdTime>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar oo vídeo do produto no formato que melhor lhe  convier.  Para utilizar essa coluna tenha acesso a documentação oficial da Oracle. Seu conteúdo é opcional.]]></commentInRDBMS>
+<generatorID>301CE208-2DF9-E310-0F35-83F73FC9A9D0</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT029</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2FDE0DF4-B125-8074-54E0-A6A66351BD22" name="MC_VIDEO_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 17:40:03 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>99075E98-D8DA-BEC4-9587-C0C14F7A6CEF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

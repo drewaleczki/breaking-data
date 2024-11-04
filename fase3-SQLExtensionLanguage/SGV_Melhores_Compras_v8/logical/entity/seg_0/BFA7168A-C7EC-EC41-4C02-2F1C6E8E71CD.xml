@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="BFA7168A-C7EC-EC41-4C02-2F1C6E8E71CD" name="MC_BAIRRO">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<generatorID>BADB545A-523E-2BF2-AD20-71BF84B20E45</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="CD_BAIRRO" id="45F394DD-754B-A9A9-70D5-223E4E462BFF">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do bairro e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo do bairro e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>05E6E2FF-C874-436C-D326-E6FA9643E8A4</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD_CIDADE" id="4CB2E2BE-3964-706D-AC37-2BD99DBE7B02">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:37:19 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo da cidade e seu conteúdo é obrigatório.]]></comment>
+<generatorID>8387E33C-6AE7-3575-9FB9-E08F49C44A1D</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<referedAttribute>222C6B1C-9357-E263-1EC6-CAC658BFF0B3</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_BAIRRO" id="48688E7F-FCDF-8CD0-5C37-01C5684190ED">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber o nome do Bairro. Esse conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber o nome do Bairro. Esse conteúdo é obrigatório.]]></commentInRDBMS>
+<generatorID>9E835B6A-68A7-F7C0-33C7-DA63E93FB8D0</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM_ZONA_BAIRRO" id="867E7130-1AAF-8065-5ADC-F5A660839873">
+<createdBy>Patricia</createdBy>
+<createdTime>2024-06-11 22:37:55 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber a localização da zona onde se encontra o bairro. Alguns exemplos: Zona Norte, Zona Sul, Zona Leste, Zona Oeste, Centro.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a localização da zona onde se encontra o bairro. Alguns exemplos: Zona Norte, Zona Sul, Zona Leste, Zona Oeste, Centro.]]></commentInRDBMS>
+<generatorID>F7C18051-FBCC-DB91-D5C1-BD50D0E2D49D</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="9FDE40D3-2DA3-5544-E71D-8093ED7A9DF9" name="MC_BAIRRO_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:12:33 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>45F394DD-754B-A9A9-70D5-223E4E462BFF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

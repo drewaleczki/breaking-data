@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_END_FUNC_LOGRADOURO" directorySegmentName="seg_0" id="309B270F-D84D-FF96-1565-FEB4F56AE7CE">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:36:03 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<sourcePk>A5E77D19-72C3-D477-4B9D-5C70AB62B007</sourcePk>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2AF134DE-F258-C319-33CA-90E07C8FD4E5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9645F383-B531-0ABA-A679-278A12E013EF</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

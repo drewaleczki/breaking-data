@@ -1,0 +1,150 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F289A7FB-2BBB-3409-6BAF-D626567D25F5" name="MC_END_FUNC">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>9645F383-B531-0ABA-A679-278A12E013EF</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_FUNCIONARIO" id="AD1CEAE1-E585-89CC-5B4F-DFC9323414D6">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do funcionário e seu conteúdo é obrigatório.]]></comment>
+<generatorID>9C932C4C-2704-FDFC-55B2-8000D56B47E7</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6C4124C4-07B3-B087-DD34-B125FD30F64E" referredColumn="118B72B1-0034-C1E7-85F7-8E334696F643"/>
+</associations>
+</Column>
+<Column name="CD_LOGRADOURO" id="D9F0E80C-CDE3-3824-0FA4-518FEF2731B4">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>430996C8-304A-20D5-592C-14B9641A8375</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8763787E-5F6A-E8FD-C0CA-8B434F802190" referredColumn="5B56861D-5A48-5AF2-74BA-A229CB618A36"/>
+</associations>
+</Column>
+<Column name="NR_END" id="9B85A5F0-D137-4A3D-DD1A-D906EC7A4D71">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></comment>
+<commentInRDBMS><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></commentInRDBMS>
+<generatorID>5CB0F4A0-8B91-F969-47E3-B4067D57FEF3</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DS_COMPLEMENTO_END" id="FE5C38A1-13B7-8CA4-B8B6-CFF12FF4A8F1">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Logradouro do Cliente.]]></comment>
+<generatorID>10B69654-4DE8-53E3-8149-504868C84B6C</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_INICIO" id="2CAE6BF7-11B9-1362-D6D7-BAC796BF076A">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Data de início do endereço associado ao cliente.]]></comment>
+<commentInRDBMS><![CDATA[Data de início do endereço associado ao cliente.]]></commentInRDBMS>
+<generatorID>C898530D-3CE8-6316-EE4C-5E6EBE17A64D</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DT_TERMINO" id="F3BE0D5C-A33E-27FB-94F0-05E129FDF9C8">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Data de término do endereço associado ao cliente.]]></comment>
+<commentInRDBMS><![CDATA[Data de término do endereço associado ao cliente.]]></commentInRDBMS>
+<generatorID>5F84AD03-16E1-0379-4ABC-E141B64DD4CC</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ST_END" id="8E62B9E7-967D-FA7D-D9E4-EC5D55EDF2BF">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<comment><![CDATA[Status do endereço. (A)itvo ou (I)nativo.]]></comment>
+<generatorID>42A19E47-03F3-392B-ED82-571A8F56A4AA</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="23029900-8E4D-7C2D-C170-249E002BC2B2" name="MC_END_FUNC_PK">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>D90D4F62-35A7-048D-4A60-9C00A10C4991</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD1CEAE1-E585-89CC-5B4F-DFC9323414D6"/>
+<colUsage columnID="D9F0E80C-CDE3-3824-0FA4-518FEF2731B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1D2EF775-21CF-960E-0C69-4B34A1705C18" name="FK_MC_END_FUNC">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>D870828B-8B32-5F61-1FDC-8D17DFC3352D</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="AD1CEAE1-E585-89CC-5B4F-DFC9323414D6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="75B92D82-BD6E-59F6-8CEB-E83286A62E59" name="FK_MC_END_FUNC_LOGRADOURO">
+<createdBy>renan</createdBy>
+<createdTime>2024-10-12 20:44:35 UTC</createdTime>
+<generatorID>309B270F-D84D-FF96-1565-FEB4F56AE7CE</generatorID>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D9F0E80C-CDE3-3824-0FA4-518FEF2731B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
