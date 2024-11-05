@@ -19,7 +19,7 @@ DECLARE
             JOIN mc_produto produto ON sac.cd_produto = produto.cd_produto
             JOIN mc_cliente cliente ON sac.nr_cliente = cliente.nr_cliente
             JOIN mc_end_cli endereco ON cliente.nr_cliente = endereco.nr_cliente
-            JOIN mc_logradouro logradouro ON endereco.cd_logradouro_cli = logradouro.cd_logradouro
+            JOIN mc_logradouro logradouro ON endereco.cd_logradouro = logradouro.cd_logradouro
             JOIN mc_bairro bairro ON logradouro.cd_bairro = bairro.cd_bairro
             JOIN mc_cidade cidade ON bairro.cd_cidade = cidade.cd_cidade
             JOIN mc_estado estado ON cidade.sg_estado = estado.sg_estado;
