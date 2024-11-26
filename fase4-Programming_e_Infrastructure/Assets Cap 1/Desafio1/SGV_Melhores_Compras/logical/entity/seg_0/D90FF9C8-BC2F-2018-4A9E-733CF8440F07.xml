@@ -1,0 +1,141 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D90FF9C8-BC2F-2018-4A9E-733CF8440F07" name="MC END CLI">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<generatorID>19A1836D-80ED-6D53-E206-AB4ADB154658</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NR CLIENTE" id="9A6C7456-95BA-03C6-8D3A-E9FD39B048B7">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o número do cliente e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o número do cliente e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD LOGRADOURO CLI" id="3CA904D1-908A-8062-C889-439FB678FAEC">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o código do logradouro  do cliente e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o código do logradouro  do cliente e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR END" id="7FF71A4B-ACE1-F04A-F909-6C5ED008ABE2">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></comment>
+<commentInRDBMS><![CDATA[Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.]]></commentInRDBMS>
+<generatorID>4E3AF31C-9C59-A736-9481-7962E7BDA7A4</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS COMPLEMENTO END" id="610A2E37-9C7C-6A5C-DC49-A0F9492BB541">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o complemento do endereço do cliente e seu conteúdo pode ser opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o complemento do endereço do cliente e seu conteúdo pode ser opcional.]]></commentInRDBMS>
+<generatorID>41F5F223-2902-8602-1FF6-DB0AC9BC9FD9</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT INICIO" id="2C3F9827-BFB2-32AF-9222-E1E8D634CA6B">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Data de início do endereço associado ao cliente.]]></comment>
+<commentInRDBMS><![CDATA[Data de início do endereço associado ao cliente.]]></commentInRDBMS>
+<generatorID>3F3E7C65-3C83-BAEC-A28B-57E8B15F32C5</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT TERMINO" id="007AF4E3-336A-9361-2506-0CACF81A0329">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Data de término do endereço associado ao cliente.]]></comment>
+<commentInRDBMS><![CDATA[Data de término do endereço associado ao cliente.]]></commentInRDBMS>
+<generatorID>F73B605D-79BC-593A-0CD1-62B874966063</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ST END" id="B7754355-E1A9-41E5-B395-BE9D3357F620">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Status do endereço. (A)itvo ou (I)nativo.]]></comment>
+<commentInRDBMS><![CDATA[Status do endereço. (A)itvo ou (I)nativo.]]></commentInRDBMS>
+<generatorID>9E50EFF9-E0D6-F7D9-573C-40A2ACCA1F3A</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="48397002-BF62-1EB8-74E0-9ED3B6E7A4BB" name="MC END CLI PK">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<pk>true</pk>
+</identifier>
+</identifiers>
+</Entity>

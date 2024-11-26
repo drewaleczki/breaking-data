@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BE2F9C25-8722-CA4D-62A4-98772F4DE0E1" name="MC_CLI_JURIDICA">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:41:23 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<ordsAlias>kd_cli_juridica</ordsAlias>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NR_CLIENTE" id="272EB4E3-277B-C46B-982E-9D3B0554C7A3">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:42:59 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da tabela NC_CLIENTE. ]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da tabela NC_CLIENTE. ]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<associations>
+<colAssociation fkAssociation="32004F6C-A7F9-B126-0177-8629B6EA5426" referredColumn="A0AE6625-F1C4-40D5-0C78-0D4E4450D37E"/>
+</associations>
+</Column>
+<Column name="DT_FUNDACAO" id="022CE12C-659E-14AF-838B-E06D6B2A2F67">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:42:38 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar data  de fundação do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar data  de fundação do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Column>
+<Column name="NR_CNPJ" id="A4FF5B4D-098C-20B3-F32A-E0808470739E">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:42:38 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o  numero do CNPJ do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o  numero do CNPJ do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Column>
+<Column name="NR_INSCR_EST" id="768360F2-68BE-B53E-FF72-3B767B180ADF">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:42:38 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o  numero da Inscrição Estadual  do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser opcional]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o  numero da Inscrição Estadual  do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser opcional]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15</dataTypeSize>
+<ownDataTypeParameters>15,,</ownDataTypeParameters>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C1CBEA6A-5507-FCBD-F60F-4654136CEB87" name="PK_MC_CLI_JURIDICA">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:48:59 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="272EB4E3-277B-C46B-982E-9D3B0554C7A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="42666002-F8E0-B473-C0DA-C7F8BB1A06F8" name="FK_MC_CLIENTE_JURIDICA">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:42:59 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="272EB4E3-277B-C46B-982E-9D3B0554C7A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

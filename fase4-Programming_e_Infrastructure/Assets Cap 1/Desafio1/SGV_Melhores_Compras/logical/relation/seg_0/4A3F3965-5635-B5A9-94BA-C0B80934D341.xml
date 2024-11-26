@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_PRODUTO_IMAGEM" directorySegmentName="seg_0" id="4A3F3965-5635-B5A9-94BA-C0B80934D341">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<generatorID>486939C0-81F8-3AF4-A9FA-626E4D106E58</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9AE92F42-B513-68A0-1455-E8B6BBD09616</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>4F9CACD3-DE27-5754-A573-91305FECBC52</targetEntity>
+<transferable>true</transferable>
+</Relation>

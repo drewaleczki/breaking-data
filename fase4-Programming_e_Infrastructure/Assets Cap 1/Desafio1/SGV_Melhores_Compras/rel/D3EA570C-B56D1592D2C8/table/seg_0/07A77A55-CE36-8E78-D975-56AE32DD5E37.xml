@@ -1,0 +1,97 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="07A77A55-CE36-8E78-D975-56AE32DD5E37" name="MC_CIDADE">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:40:47 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<ordsAlias>kd_cidade</ordsAlias>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_CIDADE" id="F02A7FC6-D49A-05B2-FEC8-571348793994">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:42:50 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo da cidade e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo da cidade e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Column>
+<Column name="SG_ESTADO" id="B3E3A9DD-3280-305D-C11A-24D284CEB402">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-21 11:04:26 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<associations>
+<colAssociation fkAssociation="6A70E11E-2F9B-C184-D9A4-3246F0B4C0DD" referredColumn="52244476-C5C1-4732-1A72-E3E00701718E"/>
+</associations>
+</Column>
+<Column name="NM_CIDADE" id="2A6C40E9-FF11-F3E8-44AA-E1F520D2B204">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:42:50 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber o nome da Cidade. Esse conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber o nome da Cidade. Esse conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>60</dataTypeSize>
+<ownDataTypeParameters>60,,</ownDataTypeParameters>
+</Column>
+<Column name="CD_IBGE" id="91E7B7FC-A5E3-A6D7-9017-29C14C9317E1">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:42:50 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o código do IBGE que fornece informações para geração da NFe.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o código do IBGE que fornece informações para geração da NFe.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Column>
+<Column name="NR_DDD" id="195048FB-9931-C08C-6F87-C708729BB111">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-21 11:48:02 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o número do DDD da cidade para ser utilizado no contato telefônico. Seu conteudo é opcional.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o número do DDD da cidade para ser utilizado no contato telefônico. Seu conteudo é opcional.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="E0CB2B2E-A056-0916-0365-1D3764CE88EE" name="PK_MC_CIDADE">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:42:50 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="F02A7FC6-D49A-05B2-FEC8-571348793994"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C7982584-08F8-5DF0-4A9F-043CD33B2C01" name="FK_MC_CIDADE_ESTADO">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-21 11:04:26 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="B3E3A9DD-3280-305D-C11A-24D284CEB402"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
