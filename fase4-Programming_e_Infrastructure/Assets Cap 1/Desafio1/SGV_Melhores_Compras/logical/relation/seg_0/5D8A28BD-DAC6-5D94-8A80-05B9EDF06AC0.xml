@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_END_FUNC" directorySegmentName="seg_0" id="5D8A28BD-DAC6-5D94-8A80-05B9EDF06AC0">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<generatorID>D012DCC6-B96A-1E96-CD06-593609E2A4EC</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useSurrogateKey>true</useSurrogateKey>
+<identifying>true</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4F302221-514A-229D-2A59-06BD5CA6AAE7</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>5D5F88C0-79FC-14B2-C68B-1BAA5C5A081E</targetEntity>
+<transferable>true</transferable>
+</Relation>

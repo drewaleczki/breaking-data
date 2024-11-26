@@ -1,0 +1,268 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="5BD226DF-BA74-0AA2-12C8-15254B8129AA" name="MC SGV OCORRENCIA SAC">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<generatorID>133C6A08-E334-61FF-DAAF-4BCCED7EDE0A</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="NR OCORRENCIA SAC" id="27C9C921-D333-AF65-3128-D15D6CDDC58A">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar a chave primária da tabela ocorrência SAC, que será utilizada pela area de negócio da Melhores  Compras.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar a chave primária da tabela ocorrência SAC, que será utilizada pela area de negócio da Melhores  Compras.]]></commentInRDBMS>
+<generatorID>5D071968-08D2-C485-97D7-6CBFD9FB2078</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DT ABERTURA SAC" id="D02D7EE5-13E1-4DA2-A61C-628DAF60AA08">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber a data e horário do chamado  SAC aberto pelo cliente. Seu conteudo deve ser obrigatório e deve ser uma cópia dos dados da coluna DT_ABERTURA_SAC na  tabela T_MC_SGV_SAC.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber a data e horário do chamado  SAC aberto pelo cliente. Seu conteudo deve ser obrigatório e deve ser uma cópia dos dados da coluna DT_ABERTURA_SAC na  tabela T_MC_SGV_SAC.]]></commentInRDBMS>
+<generatorID>B5A156F8-7B8A-8182-8214-4112F2003B9D</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="HR ABERTURA SAC" id="D15BAF74-8E12-9565-822C-B695DFE2A5F5">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber o horário do chamado  SAC aberto pelo cliente. Seu conteudo deve ser obrigatório e deve ser uma cópia dos dados da coluna HR_ABERTURA_SAC na  tabela T_MC_SGV_SAC.]]></comment>
+<generatorID>803E9381-211E-A4D6-3F61-629675A945BC</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS TIPO CLASSIFICACAO SAC" id="720EADB1-2E56-9FA7-8503-701E581A5B6D">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna  irá  receber a descrição da classficação do tipo de chamado SAC. O tipo do chamado SAC aberto pelo cliente. Seu conteúdo deve ser  obrigatório e os possíveis valores são: Sugestão; Dúvida ou  Elogio. Esses valores devem ser calculados a partir do conteúdo da coluna TP_SAC na tabela T_MC_SGV_SAC.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna  irá  receber a descrição da classficação do tipo de chamado SAC. O tipo do chamado SAC aberto pelo cliente. Seu conteúdo deve ser  obrigatório e os possíveis valores são: Sugestão; Dúvida ou  Elogio. Esses valores devem ser calculados a partir do conteúdo da coluna TP_SAC na tabela T_MC_SGV_SAC.]]></commentInRDBMS>
+<generatorID>23BA0AC4-E60E-6647-F82E-CFA3939A0F40</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS INDICE SATISFACAO ATD SAC" id="A34AAB21-0C1C-722F-CE9D-6BB3C5687757">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá receber a descrição do índice de satisfação  do cliente  perante o chamado aberto no SAC das Melhores Compras. Esse conteúdo pode ser recuperado na tabela ORCL da FIAP pf0110.fun_gera_indice_sac_cli e deve ser selecionado sempre que necessário.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá receber a descrição do índice de satisfação  do cliente  perante o chamado aberto no SAC das Melhores Compras. Esse conteúdo pode ser recuperado na tabela ORCL da FIAP pf0110.fun_gera_indice_sac_cli e deve ser selecionado sempre que necessário.]]></commentInRDBMS>
+<generatorID>888B1C60-40D7-CFD1-D6C7-5D98F9B48586</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="CD PRODUTO" id="9EE74CB9-927F-6BAF-DAD9-25DB3D7A06B2">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá receber o código do produto e seu conteúdo deve ser obrigatório. Essa descrição  deve ser uma cópia dos dados da coluna CD_PRODUTO na tabela T_MC_PRODUTO.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá receber o código do produto e seu conteúdo deve ser obrigatório. Essa descrição  deve ser uma cópia dos dados da coluna CD_PRODUTO na tabela T_MC_PRODUTO.]]></commentInRDBMS>
+<generatorID>6C5D5C13-417A-7D45-1C37-F5E21DA26EA2</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="DS PRODUTO" id="3F82055C-3BDA-984A-908E-B83E2094D5DD">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá receber a descrição do produto e seu conteúdo deve ser obrigatório. Essa descrição  deve ser uma cópia dos dados da coluna DS_PRODUTO na tabela T_MC_PRODUTO.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá receber a descrição do produto e seu conteúdo deve ser obrigatório. Essa descrição  deve ser uma cópia dos dados da coluna DS_PRODUTO na tabela T_MC_PRODUTO.]]></commentInRDBMS>
+<generatorID>C7EC079F-BCDB-6AFB-B597-1438822924B0</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80</dataTypeSize>
+<ownDataTypeParameters>80,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL UNITARIO PRODUTO" id="4B5D8223-0B70-5947-9CF2-F1174901F8CF">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o valor unitário do produto. Seu conteúdo deve ser > 0 e  deve ser uma cópia dos dados da coluna VL_UNITARIO na tabela T_MC_PRODUTO.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o valor unitário do produto. Seu conteúdo deve ser > 0 e  deve ser uma cópia dos dados da coluna VL_UNITARIO na tabela T_MC_PRODUTO.]]></commentInRDBMS>
+<generatorID>4138DA0D-B841-9B34-C1E0-4717123CC511</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,10,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL PERC LUCRO" id="22B6295C-6A56-9C6C-E7D5-9972B5B1DCB4">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o valor percentual  do lucro sobre o produto ofertado. Seu conteúdo deve ser uma cópia dos dados da coluna VL_PERC_LUCRO na tabela T_MC_PRODUTO.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o valor percentual  do lucro sobre o produto ofertado. Seu conteúdo deve ser uma cópia dos dados da coluna VL_PERC_LUCRO na tabela T_MC_PRODUTO.]]></commentInRDBMS>
+<generatorID>ECAB5540-166E-0B25-FAD7-8E2BDC843E71</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL UNITARIO LUCRO PRODUTO" id="0148ABB3-76C4-7EAA-E4ED-5015332089B5">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o valor do lucro unitario do lucro sobre o produto ofertado. Seu conteúdo deve ser calculado sobre a seguinte formula: conteúdo da coluna (VL_PERC_LUCRO / 100 ) * VL_UNITARIO_PRODUTO. Esses valores se  encontram na tabela T_MC_PRODUTO.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o valor do lucro unitario do lucro sobre o produto ofertado. Seu conteúdo deve ser calculado sobre a seguinte formula: conteúdo da coluna (VL_PERC_LUCRO / 100 ) * VL_UNITARIO_PRODUTO. Esses valores se  encontram na tabela T_MC_PRODUTO.]]></commentInRDBMS>
+<generatorID>DCB32191-54FF-64DF-F1E0-7D7CDAC0ABE0</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="SG ESTADO" id="80C1BEF3-74D4-D1A4-FF0B-0B719088C5B3">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório e deve ser uma cópia dos dados da coluna SG_ESTADO  na tabela T_MC_ESTADO.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório e deve ser uma cópia dos dados da coluna SG_ESTADO  na tabela T_MC_ESTADO.]]></commentInRDBMS>
+<generatorID>BE8A702B-B726-4CB1-0816-36A7D1771686</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2</dataTypeSize>
+<ownDataTypeParameters>2,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM ESTADO" id="4A80052A-5FCB-B38B-3A41-5FE37B390B11">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber a descrição do nome  do Estado. Esse conteúdo é obrigatório e deve ser uma cópia dos dados da coluna NM_ESTADO  na tabela T_MC_ESTADO.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber a descrição do nome  do Estado. Esse conteúdo é obrigatório e deve ser uma cópia dos dados da coluna NM_ESTADO  na tabela T_MC_ESTADO.]]></commentInRDBMS>
+<generatorID>55592D8B-3E14-1739-0BC9-5935B305C773</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NR CLIENTE" id="3CFB0076-5001-62C1-9EEA-F49F3933FC55">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá receber o código do nome do cliente  e seu conteúdo deve ser obrigatório. Essa descrição  deve ser uma cópia dos dados da coluna NR_CLIENTE  na tabela T_MC_CLIENTE.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá receber o código do nome do cliente  e seu conteúdo deve ser obrigatório. Essa descrição  deve ser uma cópia dos dados da coluna NR_CLIENTE  na tabela T_MC_CLIENTE.]]></commentInRDBMS>
+<generatorID>A78CEB86-F1B6-C78D-6117-DB0E8285E14F</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="NM CLIENTE" id="FF932878-4FB9-FFE0-BAF9-BCF1F73DA12D">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá receber o  nome do cliente  e seu conteúdo deve ser obrigatório. Essa descrição  deve ser uma cópia dos dados da coluna NM_CLIENTE  na tabela T_MC_CLIENTE.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá receber o  nome do cliente  e seu conteúdo deve ser obrigatório. Essa descrição  deve ser uma cópia dos dados da coluna NM_CLIENTE  na tabela T_MC_CLIENTE.]]></commentInRDBMS>
+<generatorID>3D3890DF-25EE-D92E-9D13-FA6AC49EACA4</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>160</dataTypeSize>
+<ownDataTypeParameters>160,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="VL ICMS PRODUTO" id="63BF56AD-E105-93A0-90C7-6F6D1F93C01D">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<comment><![CDATA[Essa coluna irá armazenar o valor médio do ICMS pago sobre o produto ofertado a partir do Estado onde o cliente solicita a entrega. Seu conteúdo deve ser calculado sobre a seguinte formula: conteúdo da coluna (VL_PERC_ALIQUOTA_MEDIA / 100 ) * VL_UNITARIO_PRODUTO. O valor da alíquota é extraído da procedure prc_pega_aliquota_media_ICMS e o valor unitário do produto se  encontra na tabela T_MC_PRODUTO.]]></comment>
+<commentInRDBMS><![CDATA[Essa coluna irá armazenar o valor médio do ICMS pago sobre o produto ofertado a partir do Estado onde o cliente solicita a entrega. Seu conteúdo deve ser calculado sobre a seguinte formula: conteúdo da coluna (VL_PERC_ALIQUOTA_MEDIA / 100 ) * VL_UNITARIO_PRODUTO. O valor da alíquota é extraído da procedure prc_pega_aliquota_media_ICMS e o valor unitário do produto se  encontra na tabela T_MC_PRODUTO.]]></commentInRDBMS>
+<generatorID>7C21F661-CBAB-7E84-5649-14535A7F0C01</generatorID>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,8,2</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

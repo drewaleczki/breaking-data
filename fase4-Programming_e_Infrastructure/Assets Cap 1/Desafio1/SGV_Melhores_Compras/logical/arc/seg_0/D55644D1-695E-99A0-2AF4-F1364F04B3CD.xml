@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Arc class="oracle.dbtools.crest.model.design.logical.Arc" directorySegmentName="seg_0" id="D55644D1-695E-99A0-2AF4-F1364F04B3CD" name="FK_ARCO_CLI_FISICA_JURIDICA">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2023-03-06 18:25:11 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<engineerTo>
+<item key="D3EA570C-CF09-A95D-0250-B56D1592D2C8" value="true"/>
+</engineerTo>
+<entity>ACB5A015-6E5D-966C-CBD4-8AE24BD09B87</entity>
+<relations>
+<relationID>46730D93-D735-8C07-826A-23E2F78E689B</relationID>
+<relationID>32BE8F36-E587-2853-567F-B647019BDEFA</relationID>
+</relations>
+</Arc>
