@@ -118,32 +118,6 @@ COMMENT ON COLUMN mc_cli_fisica.nr_cpf IS
 
 ALTER TABLE mc_cli_fisica ADD CONSTRAINT mc_cli_fisica_pk PRIMARY KEY ( nr_cliente );
 
-CREATE OR REPLACE TRIGGER arc_fk_arco_cli__mc_cli_fisica BEFORE
-    INSERT OR UPDATE OF nr_cliente ON mc_cli_fisica
-    FOR EACH ROW
-DECLARE
-    d NUMBER(10);
-BEGIN
-    SELECT
-        a.nr_cliente
-    INTO d
-    FROM
-        mc_cliente a
-    WHERE
-        a.nr_cliente = :new.nr_cliente;
-
-    IF ( d IS NULL OR d <> :new.nr_cliente ) THEN
-        raise_application_error(-20223, 'FK FK_MC_CLIENTE_FISICA in Table MC_CLI_FISICA violates Arc constraint on Table MC_CLIENTE - discriminator column NR_CLIENTE doesn''t have value NR_CLIENTE');
-    END IF;
-
-EXCEPTION
-    WHEN no_data_found THEN
-        NULL;
-    WHEN OTHERS THEN
-        RAISE;
-END;
-/
-
 CREATE TABLE mc_cli_juridica (
     nr_cliente   NUMBER(10) NOT NULL,
     dt_fundacao  DATE NOT NULL,
@@ -167,32 +141,6 @@ COMMENT ON COLUMN mc_cli_juridica.nr_inscr_est IS
     ;
 
 ALTER TABLE mc_cli_juridica ADD CONSTRAINT mc_cli_juridica_pk PRIMARY KEY ( nr_cliente );
-
-CREATE OR REPLACE TRIGGER arc_fk_arco_cl_mc_cli_juridica BEFORE
-    INSERT OR UPDATE OF nr_cliente ON mc_cli_juridica
-    FOR EACH ROW
-DECLARE
-    d NUMBER(10);
-BEGIN
-    SELECT
-        a.nr_cliente
-    INTO d
-    FROM
-        mc_cliente a
-    WHERE
-        a.nr_cliente = :new.nr_cliente;
-
-    IF ( d IS NULL OR d <> :new.nr_cliente ) THEN
-        raise_application_error(-20223, 'FK FK_MC_CLIENTE_JURIDICA in Table MC_CLI_JURIDICA violates Arc constraint on Table MC_CLIENTE - discriminator column NR_CLIENTE doesn''t have value NR_CLIENTE');
-    END IF;
-
-EXCEPTION
-    WHEN no_data_found THEN
-        NULL;
-    WHEN OTHERS THEN
-        RAISE;
-END;
-/
 
 CREATE TABLE mc_cliente (
     nr_cliente      NUMBER(10) NOT NULL,
@@ -246,6 +194,58 @@ ALTER TABLE mc_cliente ADD CONSTRAINT uk_mc_cliente_nome_cliente UNIQUE ( nm_cli
 
 ALTER TABLE mc_cliente
     ADD CONSTRAINT ck_st_cliente CHECK ( st_cliente IN ( 'A', 'I' ) );
+
+CREATE OR REPLACE TRIGGER arc_fk_arco_cli__mc_cli_fisica BEFORE
+    INSERT OR UPDATE OF nr_cliente ON mc_cli_fisica
+    FOR EACH ROW
+DECLARE
+    d NUMBER(10);
+BEGIN
+    SELECT
+        a.nr_cliente
+    INTO d
+    FROM
+        mc_cliente a
+    WHERE
+        a.nr_cliente = :new.nr_cliente;
+
+    IF ( d IS NULL OR d <> :new.nr_cliente ) THEN
+        raise_application_error(-20223, 'FK FK_MC_CLIENTE_FISICA in Table MC_CLI_FISICA violates Arc constraint on Table MC_CLIENTE - discriminator column NR_CLIENTE doesn''t have value NR_CLIENTE');
+    END IF;
+
+EXCEPTION
+    WHEN no_data_found THEN
+        NULL;
+    WHEN OTHERS THEN
+        RAISE;
+END;
+/
+
+CREATE OR REPLACE TRIGGER arc_fk_arco_cl_mc_cli_juridica BEFORE
+    INSERT OR UPDATE OF nr_cliente ON mc_cli_juridica
+    FOR EACH ROW
+DECLARE
+    d NUMBER(10);
+BEGIN
+    SELECT
+        a.nr_cliente
+    INTO d
+    FROM
+        mc_cliente a
+    WHERE
+        a.nr_cliente = :new.nr_cliente;
+
+    IF ( d IS NULL OR d <> :new.nr_cliente ) THEN
+        raise_application_error(-20223, 'FK FK_MC_CLIENTE_JURIDICA in Table MC_CLI_JURIDICA violates Arc constraint on Table MC_CLIENTE - discriminator column NR_CLIENTE doesn''t have value NR_CLIENTE');
+    END IF;
+
+EXCEPTION
+    WHEN no_data_found THEN
+        NULL;
+    WHEN OTHERS THEN
+        RAISE;
+END;
+/
 
 CREATE TABLE mc_depto (
     cd_depto NUMBER(3) NOT NULL,
