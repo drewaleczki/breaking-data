@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BADB545A-523E-2BF2-AD20-71BF84B20E45" name="MC_BAIRRO">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:42:57 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<ordsAlias>kd_bairro</ordsAlias>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CD_BAIRRO" id="05E6E2FF-C874-436C-D326-E6FA9643E8A4">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:45:13 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo do bairro e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo do bairro e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,8,</ownDataTypeParameters>
+</Column>
+<Column name="CD_CIDADE" id="4F9F6537-9F69-F1D5-5708-B03D23521B25">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-21 11:04:37 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber o codigo da cidade e seu conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber o codigo da cidade e seu conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>8</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<associations>
+<colAssociation fkAssociation="2680C759-AE33-B8CA-3F4B-B5B21C8B658C" referredColumn="F02A7FC6-D49A-05B2-FEC8-571348793994"/>
+</associations>
+</Column>
+<Column name="NM_BAIRRO" id="9E835B6A-68A7-F7C0-33C7-DA63E93FB8D0">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:45:13 UTC</createdTime>
+<comment><![CDATA[Esta coluna ira receber o nome do Bairro. Esse conteúdo é obrigatório.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna ira receber o nome do Bairro. Esse conteúdo é obrigatório.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>45</dataTypeSize>
+<ownDataTypeParameters>45,,</ownDataTypeParameters>
+</Column>
+<Column name="NM_ZONA_BAIRRO" id="F7C18051-FBCC-DB91-D5C1-BD50D0E2D49D">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:45:13 UTC</createdTime>
+<comment><![CDATA[Esta coluna irá receber a localização da zona onde se encontra o bairro. Alguns exemplos: Zona Norte, Zona Sul, Zona Leste, Zona Oeste, Centro.]]></comment>
+<commentInRDBMS><![CDATA[Esta coluna irá receber a localização da zona onde se encontra o bairro. Alguns exemplos: Zona Norte, Zona Sul, Zona Leste, Zona Oeste, Centro.]]></commentInRDBMS>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE0D588C-6248-3AFF-7AFD-7980CEE0B289" name="PK_MC_BAIRRO">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-21 11:06:17 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<indexColumnUsage>
+<colUsage columnID="05E6E2FF-C874-436C-D326-E6FA9643E8A4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E28D21B0-AE63-B4B1-2324-E293893C6B6D" name="FK_MC_BAIRRO_CIDADE">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-21 11:04:37 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<indexColumnUsage>
+<colUsage columnID="4F9F6537-9F69-F1D5-5708-B03D23521B25"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

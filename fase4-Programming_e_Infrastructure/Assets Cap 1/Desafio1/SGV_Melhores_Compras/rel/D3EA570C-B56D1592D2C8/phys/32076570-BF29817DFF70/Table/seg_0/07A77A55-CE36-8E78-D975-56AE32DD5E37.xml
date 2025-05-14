@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DB_CIDADE" directorySegmentName="seg_0" id="07A77A55-CE36-8E78-D975-56AE32DD5E37">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:40:47 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<logging>YES</logging>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NR_DDD" id="195048FB-9931-C08C-6F87-C708729BB111">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NM_CIDADE" id="2A6C40E9-FF11-F3E8-44AA-E1F520D2B204">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:42:50 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_IBGE" id="91E7B7FC-A5E3-A6D7-9017-29C14C9317E1">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:42:50 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SG_ESTADO" id="B3E3A9DD-3280-305D-C11A-24D284CEB402">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_CIDADE" id="F02A7FC6-D49A-05B2-FEC8-571348793994">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:42:50 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_DB_CIDADE_ESTADO" id="C7982584-08F8-5DF0-4A9F-043CD33B2C01">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DB_CIDADE" id="E0CB2B2E-A056-0916-0365-1D3764CE88EE">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:42:50 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexSort>NO</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

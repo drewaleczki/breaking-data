@@ -6,13 +6,13 @@ CREATE TABLE mc_bairro (
 );
 
 COMMENT ON COLUMN mc_bairro.cd_bairro IS
-    'Esta coluna irá receber o codigo do bairro e seu conteúdo é obrigatório.';
+    'Esta coluna irï¿½ receber o codigo do bairro e seu conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_bairro.nm_bairro IS
-    'Esta coluna ira receber o nome do Bairro. Esse conteúdo é obrigatório.';
+    'Esta coluna ira receber o nome do Bairro. Esse conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_bairro.nm_zona_bairro IS
-    'Esta coluna irá receber a localização da zona onde se encontra o bairro. Alguns exemplos: Zona Norte, Zona Sul, Zona Leste, Zona Oeste, Centro.'
+    'Esta coluna irï¿½ receber a localizaï¿½ï¿½o da zona onde se encontra o bairro. Alguns exemplos: Zona Norte, Zona Sul, Zona Leste, Zona Oeste, Centro.'
     ;
 
 ALTER TABLE mc_bairro ADD CONSTRAINT mc_bairro_pk PRIMARY KEY ( cd_bairro );
@@ -27,25 +27,25 @@ CREATE TABLE mc_categoria_prod (
 );
 
 COMMENT ON COLUMN mc_categoria_prod.cd_categoria IS
-    'Essa coluna irá armazenar a chave primária da tabela de categoria de produtos da Melhorees Compras. Cada categoria nova cadastrada  será acionada a Sequence  SQ_MC_CATEGORIA que se encarregará de gerar o próximo número único da categoria.'
+    'Essa coluna irï¿½ armazenar a chave primï¿½ria da tabela de categoria de produtos da Melhorees Compras. Cada categoria nova cadastrada  serï¿½ acionada a Sequence  SQ_MC_CATEGORIA que se encarregarï¿½ de gerar o prï¿½ximo nï¿½mero ï¿½nico da categoria.'
     ;
 
 COMMENT ON COLUMN mc_categoria_prod.tp_categoria IS
-    'Nessa  coluna  será  armazenada o tipo de categoria que poderá  ser (V)ídeo ou (P)rodudto. Seu conteúdo deve ser obrigatório.';
+    'Nessa  coluna  serï¿½  armazenada o tipo de categoria que poderï¿½  ser (V)ï¿½deo ou (P)rodudto. Seu conteï¿½do deve ser obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_categoria_prod.ds_categoria IS
-    'Essa coluna irá armazenar descrição da categoria de produtos da Melhorees Compras. Cada categoria tem uma  descrição única e serve para organizar os produtos em categorias simliares, melhorando a tomada de decisão.'
+    'Essa coluna irï¿½ armazenar descriï¿½ï¿½o da categoria de produtos da Melhorees Compras. Cada categoria tem uma  descriï¿½ï¿½o ï¿½nica e serve para organizar os produtos em categorias simliares, melhorando a tomada de decisï¿½o.'
     ;
 
 COMMENT ON COLUMN mc_categoria_prod.dt_inicio IS
-    'Essa coluna irá receber  a data de início da categoria. Seu formato é dd/mm/yyyy e seu conteúdo deve ser sempre  obrigatório.';
+    'Essa coluna irï¿½ receber  a data de inï¿½cio da categoria. Seu formato ï¿½ dd/mm/yyyy e seu conteï¿½do deve ser sempre  obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_categoria_prod.dt_termino IS
-    'Essa coluna irá receber  a data de encerramento  da categoria. Seu formato é dd/mm/yyyy e seu conteúdo deve ser sempre  opcional. Conteúdo obrigatório significa que a categoria foi encerrada a partir da data término. Já o conteúdo opcional indica que a categoria está ativa e operante.'
+    'Essa coluna irï¿½ receber  a data de encerramento  da categoria. Seu formato ï¿½ dd/mm/yyyy e seu conteï¿½do deve ser sempre  opcional. Conteï¿½do obrigatï¿½rio significa que a categoria foi encerrada a partir da data tï¿½rmino. Jï¿½ o conteï¿½do opcional indica que a categoria estï¿½ ativa e operante.'
     ;
 
 COMMENT ON COLUMN mc_categoria_prod.st_categoria IS
-    'Essa coluna irá armazenar o stauts da categoria da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).';
+    'Essa coluna irï¿½ armazenar o stauts da categoria da Melhorees Compras. Os valores permitidos aqui sï¿½o: A(tivo) e I(nativo).';
 
 ALTER TABLE mc_categoria_prod
     ADD CONSTRAINT ck_vl_dt_termino CHECK ( ( dt_termino IS NOT NULL
@@ -68,16 +68,16 @@ CREATE TABLE mc_cidade (
 );
 
 COMMENT ON COLUMN mc_cidade.cd_cidade IS
-    'Esta coluna irá receber o codigo da cidade e seu conteúdo é obrigatório.';
+    'Esta coluna irï¿½ receber o codigo da cidade e seu conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_cidade.nm_cidade IS
-    'Esta coluna ira receber o nome da Cidade. Esse conteúdo é obrigatório.';
+    'Esta coluna ira receber o nome da Cidade. Esse conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_cidade.cd_ibge IS
-    'Esta coluna irá receber o código do IBGE que fornece informações para geração da NFe.';
+    'Esta coluna irï¿½ receber o cï¿½digo do IBGE que fornece informaï¿½ï¿½es para geraï¿½ï¿½o da NFe.';
 
 COMMENT ON COLUMN mc_cidade.nr_ddd IS
-    'Esta coluna irá receber o número do DDD da cidade para ser utilizado no contato telefônico. Seu conteudo é opcional.';
+    'Esta coluna irï¿½ receber o nï¿½mero do DDD da cidade para ser utilizado no contato telefï¿½nico. Seu conteudo ï¿½ opcional.';
 
 ALTER TABLE mc_cidade ADD CONSTRAINT mc_cidade_pk PRIMARY KEY ( cd_cidade );
 
@@ -90,21 +90,21 @@ CREATE TABLE mc_cli_fisica (
 );
 
 COMMENT ON COLUMN mc_cli_fisica.nr_cliente IS
-    'Essa coluna armazena o número do cliente Pessoa Física.';
+    'Essa coluna armazena o nï¿½mero do cliente Pessoa Fï¿½sica.';
 
 COMMENT ON COLUMN mc_cli_fisica.dt_nascimento IS
-    'Essa coluna irá armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. '
+    'Essa coluna irï¿½ armazenar a data de nascimento do cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio. '
     ;
 
 COMMENT ON COLUMN mc_cli_fisica.fl_sexo_biologico IS
-    'Essa coluna irá armazenar o sexo biológico do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.. '
+    'Essa coluna irï¿½ armazenar o sexo biolï¿½gico do cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio.. '
     ;
 
 COMMENT ON COLUMN mc_cli_fisica.ds_genero IS
-    'Genero do sexo do Cliente. Seu conteúdo deve ser obrigatório.';
+    'Genero do sexo do Cliente. Seu conteï¿½do deve ser obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_cli_fisica.nr_cpf IS
-    'Essa coluna irá armazenar o número do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório. '
+    'Essa coluna irï¿½ armazenar o nï¿½mero do CPF do cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio. '
     ;
 
 ALTER TABLE mc_cli_fisica ADD CONSTRAINT mc_cli_fisica_pk PRIMARY KEY ( nr_cliente );
@@ -117,18 +117,18 @@ CREATE TABLE mc_cli_juridica (
 );
 
 COMMENT ON COLUMN mc_cli_juridica.nr_cliente IS
-    'Essa coluna armazena o número do Cliente Pessoa Jurídica.';
+    'Essa coluna armazena o nï¿½mero do Cliente Pessoa Jurï¿½dica.';
 
 COMMENT ON COLUMN mc_cli_juridica.dt_fundacao IS
-    'Essa coluna irá armazenar data  de fundação do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.'
+    'Essa coluna irï¿½ armazenar data  de fundaï¿½ï¿½o do cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio.'
     ;
 
 COMMENT ON COLUMN mc_cli_juridica.nr_cnpj IS
-    'Essa coluna irá armazenar o  numero do CNPJ do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.'
+    'Essa coluna irï¿½ armazenar o  numero do CNPJ do cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio.'
     ;
 
 COMMENT ON COLUMN mc_cli_juridica.nr_inscr_est IS
-    'Essa coluna irá armazenar o  numero da Inscrição Estadual  do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser opcional'
+    'Essa coluna irï¿½ armazenar o  numero da Inscriï¿½ï¿½o Estadual  do cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser opcional'
     ;
 
 ALTER TABLE mc_cli_juridica ADD CONSTRAINT mc_cli_juridica_pk PRIMARY KEY ( nr_cliente );
@@ -146,37 +146,37 @@ CREATE TABLE mc_cliente (
 );
 
 COMMENT ON COLUMN mc_cliente.nr_cliente IS
-    'Essa coluna irá armazenar o código único do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório, único e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terá sempre o número disponivel para uso.'
+    'Essa coluna irï¿½ armazenar o cï¿½digo ï¿½nico do cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio, ï¿½nico e preenhcido a  parrtir da chamada de sequence  SQ_MC_CLIENTE, a qual terï¿½ sempre o nï¿½mero disponivel para uso.'
     ;
 
 COMMENT ON COLUMN mc_cliente.nm_cliente IS
-    'Essa coluna irá armazenar o nome do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.';
+    'Essa coluna irï¿½ armazenar o nome do cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_cliente.qt_estrelas IS
-    'Essa coluna irá armazenar a quantiade de estrelas do cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório e ser possível de estar entre 1 e 5 estrelas.'
+    'Essa coluna irï¿½ armazenar a quantiade de estrelas do cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio e ser possï¿½vel de estar entre 1 e 5 estrelas.'
     ;
 
 COMMENT ON COLUMN mc_cliente.vl_medio_compra IS
-    'Essa coluna irá armazenar o valor  médio de gastos f eito pelo cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório e deve ser calculado diariamente.'
+    'Essa coluna irï¿½ armazenar o valor  mï¿½dio de gastos f eito pelo cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio e deve ser calculado diariamente.'
     ;
 
 COMMENT ON COLUMN mc_cliente.st_cliente IS
-    'Essa coluna irá armazenar o stauts do cliente da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).';
+    'Essa coluna irï¿½ armazenar o stauts do cliente da Melhorees Compras. Os valores permitidos aqui sï¿½o: A(tivo) e I(nativo).';
 
 COMMENT ON COLUMN mc_cliente.ds_email IS
-    'Essa coluna irá armazenar o email  do cliente da Melhorees Compras. No minimo é esperado um email contendo o caractere (@) em seu conteúdo.'
+    'Essa coluna irï¿½ armazenar o email  do cliente da Melhorees Compras. No minimo ï¿½ esperado um email contendo o caractere (@) em seu conteï¿½do.'
     ;
 
 COMMENT ON COLUMN mc_cliente.nr_telefone IS
-    'Essa coluna irá armazenar o número do cliente da Melhorees Compras. A mascara de armazenamento deve ser: (<nr_ddd>) 99999-9999 e  deve ser utilizada pré definida.'
+    'Essa coluna irï¿½ armazenar o nï¿½mero do cliente da Melhorees Compras. A mascara de armazenamento deve ser: (<nr_ddd>) 99999-9999 e  deve ser utilizada prï¿½ definida.'
     ;
 
 COMMENT ON COLUMN mc_cliente.nm_login IS
-    'Essa coluna irá armazenar o login de cada cliente na plataforma ecommerce da Melhores Compras. Seu conteúdo deve ser obrigatório e  único para cada cliente.'
+    'Essa coluna irï¿½ armazenar o login de cada cliente na plataforma ecommerce da Melhores Compras. Seu conteï¿½do deve ser obrigatï¿½rio e  ï¿½nico para cada cliente.'
     ;
 
 COMMENT ON COLUMN mc_cliente.ds_senha IS
-    'Essa coluna irá armazenar a senha de cada cliente na plataforma ecommerce da Melhores Compras.Seu conteúdo deve ser obrigatório.'
+    'Essa coluna irï¿½ armazenar a senha de cada cliente na plataforma ecommerce da Melhores Compras.Seu conteï¿½do deve ser obrigatï¿½rio.'
     ;
 
 ALTER TABLE mc_cliente ADD CONSTRAINT mc_cliente_pk PRIMARY KEY ( nr_cliente );
@@ -192,13 +192,13 @@ CREATE TABLE mc_depto (
 );
 
 COMMENT ON COLUMN mc_depto.cd_depto IS
-    'Esta coluna irá receber o codigo do departamento  e seu conteúdo é obrigatório.';
+    'Esta coluna irï¿½ receber o codigo do departamento  e seu conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_depto.nm_depto IS
-    'Esta coluna irá receber o nome do  departamento  e seu conteúdo é obrigatório.';
+    'Esta coluna irï¿½ receber o nome do  departamento  e seu conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_depto.st_depto IS
-    'Esta coluna irá receber o status do  departamento  e seu conteúdo é obrigatório. Os valores possíveis são: (A)tivo e (I)nativo.'
+    'Esta coluna irï¿½ receber o status do  departamento  e seu conteï¿½do ï¿½ obrigatï¿½rio. Os valores possï¿½veis sï¿½o: (A)tivo e (I)nativo.'
     ;
 
 ALTER TABLE mc_depto
@@ -219,19 +219,19 @@ CREATE TABLE mc_end_cli (
 );
 
 COMMENT ON COLUMN mc_end_cli.nr_end IS
-    'Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.';
+    'Nï¿½mero do Endereï¿½o do Cliente. O nï¿½mero da Rua/Localidade onde o cliente estï¿½ associado.';
 
 COMMENT ON COLUMN mc_end_cli.ds_complemento_end IS
-    'Esta coluna irá receber o complemento do endereço do cliente e seu conteúdo pode ser opcional.';
+    'Esta coluna irï¿½ receber o complemento do endereï¿½o do cliente e seu conteï¿½do pode ser opcional.';
 
 COMMENT ON COLUMN mc_end_cli.dt_inicio IS
-    'Data de início do endereço associado ao cliente.';
+    'Data de inï¿½cio do endereï¿½o associado ao cliente.';
 
 COMMENT ON COLUMN mc_end_cli.dt_termino IS
-    'Data de término do endereço associado ao cliente.';
+    'Data de tï¿½rmino do endereï¿½o associado ao cliente.';
 
 COMMENT ON COLUMN mc_end_cli.st_end IS
-    'Status do endereço. (A)itvo ou (I)nativo.';
+    'Status do endereï¿½o. (A)itvo ou (I)nativo.';
 
 CREATE UNIQUE INDEX mc_end_cli__idx ON
     mc_end_cli (
@@ -252,13 +252,13 @@ CREATE TABLE mc_end_func (
 );
 
 COMMENT ON COLUMN mc_end_func.nr_end IS
-    'Número do Endereço do Cliente. O número da Rua/Localidade onde o cliente está associado.';
+    'Nï¿½mero do Endereï¿½o do Cliente. O nï¿½mero da Rua/Localidade onde o cliente estï¿½ associado.';
 
 COMMENT ON COLUMN mc_end_func.dt_inicio IS
-    'Data de início do endereço associado ao cliente.';
+    'Data de inï¿½cio do endereï¿½o associado ao cliente.';
 
 COMMENT ON COLUMN mc_end_func.dt_termino IS
-    'Data de término do endereço associado ao cliente.';
+    'Data de tï¿½rmino do endereï¿½o associado ao cliente.';
 
 ALTER TABLE mc_end_func ADD CONSTRAINT mc_end_func_pk PRIMARY KEY ( cd_funcionario,
                                                                     cd_logradouro );
@@ -269,10 +269,10 @@ CREATE TABLE mc_estado (
 );
 
 COMMENT ON COLUMN mc_estado.sg_estado IS
-    'Esta coluna ira receber a siga do Estado. Esse conteúdo é obrigatório.';
+    'Esta coluna ira receber a siga do Estado. Esse conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_estado.nm_estado IS
-    'Esta coluna irá receber o nome do estado';
+    'Esta coluna irï¿½ receber o nome do estado';
 
 ALTER TABLE mc_estado ADD CONSTRAINT mc_estado_pk PRIMARY KEY ( sg_estado );
 
@@ -294,44 +294,44 @@ CREATE TABLE mc_funcionario (
 );
 
 COMMENT ON COLUMN mc_funcionario.cd_funcionario IS
-    'Esta coluna irá receber o codigo do funcionário e seu conteúdo é obrigatório.';
+    'Esta coluna irï¿½ receber o codigo do funcionï¿½rio e seu conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_funcionario.cd_depto IS
-    'Essa coluna ira receber o código do departamento em que o funcionário trabalha.';
+    'Essa coluna ira receber o cï¿½digo do departamento em que o funcionï¿½rio trabalha.';
 
 COMMENT ON COLUMN mc_funcionario.nm_funcionario IS
-    'Esta coluna irá receber o nome do funcionário e seu conteúdo é obrigatório.';
+    'Esta coluna irï¿½ receber o nome do funcionï¿½rio e seu conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_funcionario.cpf_funcionario IS
-    'Essa coluna vai receber o identificador único de pessoa física, seu conteúdo deve ser único.';
+    'Essa coluna vai receber o identificador ï¿½nico de pessoa fï¿½sica, seu conteï¿½do deve ser ï¿½nico.';
 
 COMMENT ON COLUMN mc_funcionario.dt_nascimento IS
-    'Esta coluna irá receber a data de nascimento  do funcionário e seu conteúdo é obrigatório.';
+    'Esta coluna irï¿½ receber a data de nascimento  do funcionï¿½rio e seu conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_funcionario.nr_telefone_func IS
-    'Essa coluna recebe o número de telefone do funcionário.	';
+    'Essa coluna recebe o nï¿½mero de telefone do funcionï¿½rio.	';
 
 COMMENT ON COLUMN mc_funcionario.ds_email IS
-    'Essa coluna recebe o e-mail do funcionário.';
+    'Essa coluna recebe o e-mail do funcionï¿½rio.';
 
 COMMENT ON COLUMN mc_funcionario.fl_sexo_biologico IS
-    'Esta coluna irá receber o sexo biológico do funcionário e seu conteúdo é obrigatório.Os valores permitidos aqui seriam: (F)eminino; (M)asculino ou (Hermafrodita)'
+    'Esta coluna irï¿½ receber o sexo biolï¿½gico do funcionï¿½rio e seu conteï¿½do ï¿½ obrigatï¿½rio.Os valores permitidos aqui seriam: (F)eminino; (M)asculino ou (Hermafrodita)'
     ;
 
 COMMENT ON COLUMN mc_funcionario.ds_cargo IS
-    'Essa coluna recebe o nome do cargo do funcionário.';
+    'Essa coluna recebe o nome do cargo do funcionï¿½rio.';
 
 COMMENT ON COLUMN mc_funcionario.vl_salario IS
-    'Esta coluna irá receber o valor do salário do funcionário e seu conteúdo é opcional.';
+    'Esta coluna irï¿½ receber o valor do salï¿½rio do funcionï¿½rio e seu conteï¿½do ï¿½ opcional.';
 
 COMMENT ON COLUMN mc_funcionario.st_func IS
-    'Essa coluna irá armazenar o status do funcionário da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).';
+    'Essa coluna irï¿½ armazenar o status do funcionï¿½rio da Melhorees Compras. Os valores permitidos aqui sï¿½o: A(tivo) e I(nativo).';
 
 COMMENT ON COLUMN mc_funcionario.dt_cadastramento IS
     'Data de cadastramento do Funcionario';
 
 COMMENT ON COLUMN mc_funcionario.dt_desligamento IS
-    'Data de desligamento  do Funcionario. Seu conteúdo é opcional.';
+    'Data de desligamento  do Funcionario. Seu conteï¿½do ï¿½ opcional.';
 
 ALTER TABLE mc_funcionario ADD CONSTRAINT mc_funcionario_pk PRIMARY KEY ( cd_funcionario );
 
@@ -346,10 +346,10 @@ CREATE TABLE mc_logradouro (
 );
 
 COMMENT ON COLUMN mc_logradouro.nm_logradouro IS
-    'Esta coluna irá receber o nome do logradouro e seu conteúdo é obrigatório.';
+    'Esta coluna irï¿½ receber o nome do logradouro e seu conteï¿½do ï¿½ obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_logradouro.nr_cep IS
-    'Esta coluna irá receber o numero do CEP do Logradouro e seu conteúdo é obrigatório.';
+    'Esta coluna irï¿½ receber o numero do CEP do Logradouro e seu conteï¿½do ï¿½ obrigatï¿½rio.';
 
 ALTER TABLE mc_logradouro ADD CONSTRAINT mc_logradouro_pk PRIMARY KEY ( cd_logradouro );
 
@@ -366,29 +366,29 @@ CREATE TABLE mc_produto (
 );
 
 COMMENT ON COLUMN mc_produto.cd_produto IS
-    'Essa coluna irá armazenar a chave primária da tabela de produtos da Melhorees Compras. A cada produto cadastrado será acionada a Sequence  SQ_MC_PRODUTO que se encarregará de gerar o próximo número único do produto.'
+    'Essa coluna irï¿½ armazenar a chave primï¿½ria da tabela de produtos da Melhorees Compras. A cada produto cadastrado serï¿½ acionada a Sequence  SQ_MC_PRODUTO que se encarregarï¿½ de gerar o prï¿½ximo nï¿½mero ï¿½nico do produto.'
     ;
 
 COMMENT ON COLUMN mc_produto.nr_cd_barras_prod IS
-    'Essa coluna irá armazenar o número do codigo de barras  do produto. Seu conteúdo deve ser opcional.';
+    'Essa coluna irï¿½ armazenar o nï¿½mero do codigo de barras  do produto. Seu conteï¿½do deve ser opcional.';
 
 COMMENT ON COLUMN mc_produto.ds_produto IS
-    'Essa coluna irá armazenar a descrição principal do produto. Seu conteúdo deve ser  obrigatorio.';
+    'Essa coluna irï¿½ armazenar a descriï¿½ï¿½o principal do produto. Seu conteï¿½do deve ser  obrigatorio.';
 
 COMMENT ON COLUMN mc_produto.vl_unitario IS
-    'Essa coluna irá armazenar o valor unitário do produto. Seu conteúdo deve ser > 0 ';
+    'Essa coluna irï¿½ armazenar o valor unitï¿½rio do produto. Seu conteï¿½do deve ser > 0 ';
 
 COMMENT ON COLUMN mc_produto.tp_embalagem IS
-    'Essa coluna irá armazenar o tipo de embalagem do produto. Seu conteúdo pode ser opcional.';
+    'Essa coluna irï¿½ armazenar o tipo de embalagem do produto. Seu conteï¿½do pode ser opcional.';
 
 COMMENT ON COLUMN mc_produto.st_produto IS
-    'Essa coluna irá armazenar o stauts do produto da Melhorees Compras. Os valores permitidos aqui são: A(tivo) e I(nativo).';
+    'Essa coluna irï¿½ armazenar o stauts do produto da Melhorees Compras. Os valores permitidos aqui sï¿½o: A(tivo) e I(nativo).';
 
 COMMENT ON COLUMN mc_produto.vl_perc_lucro IS
-    'Essa coluna irá armazenar o percentual  do lucro médio para cada produto. Seu conteúdo deve ser opcional.';
+    'Essa coluna irï¿½ armazenar o percentual  do lucro mï¿½dio para cada produto. Seu conteï¿½do deve ser opcional.';
 
 COMMENT ON COLUMN mc_produto.ds_completa_prod IS
-    'Essa coluna irá armazenar a descrição completa do produto. Seu conteúdo deve ser  obrigatorio.';
+    'Essa coluna irï¿½ armazenar a descriï¿½ï¿½o completa do produto. Seu conteï¿½do deve ser  obrigatorio.';
 
 ALTER TABLE mc_produto
     ADD CONSTRAINT "_CK_VL_STS_PRODUTO" CHECK ( st_produto IN ( 'A', 'I' ) );
@@ -419,53 +419,53 @@ CREATE TABLE mc_sgv_sac (
 );
 
 COMMENT ON COLUMN mc_sgv_sac.nr_sac IS
-    'Essa coluna irá armazenar a chave primária da tabela de SAC de vídeo  da Melhorees Compras. A cada SAC cadastrado pelo cliente será acionada a Sequence  SQ_MC_SGV_SAC que se encarregará de gerar o próximo número único do chamado SAC feito pelo Cliente.'
+    'Essa coluna irï¿½ armazenar a chave primï¿½ria da tabela de SAC de vï¿½deo  da Melhorees Compras. A cada SAC cadastrado pelo cliente serï¿½ acionada a Sequence  SQ_MC_SGV_SAC que se encarregarï¿½ de gerar o prï¿½ximo nï¿½mero ï¿½nico do chamado SAC feito pelo Cliente.'
     ;
 
 COMMENT ON COLUMN mc_sgv_sac.nr_cliente IS
     'Essa coluna recebe o identificador do cliente da tabela MC_CLIENTE.';
 
 COMMENT ON COLUMN mc_sgv_sac.cd_funcionario IS
-    'Essa coluna recebe o Código do funcionário da tabela MC_FUNCIONARIO que está responsável pelo atendimento.';
+    'Essa coluna recebe o Cï¿½digo do funcionï¿½rio da tabela MC_FUNCIONARIO que estï¿½ responsï¿½vel pelo atendimento.';
 
 COMMENT ON COLUMN mc_sgv_sac.cd_produto IS
-    'Essa coluna recebe o código do produto da tabela MC_PRODUTO.';
+    'Essa coluna recebe o cï¿½digo do produto da tabela MC_PRODUTO.';
 
 COMMENT ON COLUMN mc_sgv_sac.ds_detalhada_sac IS
-    'Essa coluna  irá  receber a descrição completa do SAC aberto pelo cliente. Seu conteudo deve ser obrigatório.';
+    'Essa coluna  irï¿½  receber a descriï¿½ï¿½o completa do SAC aberto pelo cliente. Seu conteudo deve ser obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_sgv_sac.dt_abertura_sac IS
-    'Essa coluna  irá  receber a data e horário do SAC aberto pelo cliente. Seu conteudo deve ser obrigatório.';
+    'Essa coluna  irï¿½  receber a data e horï¿½rio do SAC aberto pelo cliente. Seu conteudo deve ser obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_sgv_sac.hr_abertura_sac IS
-    'Essa coluna  irá  receber a hora do SAC aberto pelo cliente. Seu conteudo deve ser obrigatório.';
+    'Essa coluna  irï¿½  receber a hora do SAC aberto pelo cliente. Seu conteudo deve ser obrigatï¿½rio.';
 
 COMMENT ON COLUMN mc_sgv_sac.dt_atendimento IS
-    'Essa coluna  irá  receber a data e horário do atendmiento SAC feita pelo funcionário da Melhores Compras. Seu conteudo deve ser opcional..'
+    'Essa coluna  irï¿½  receber a data e horï¿½rio do atendmiento SAC feita pelo funcionï¿½rio da Melhores Compras. Seu conteudo deve ser opcional..'
     ;
 
 COMMENT ON COLUMN mc_sgv_sac.hr_atendimento_sac IS
-    'Essa coluna  irá  receber a hora do SAC do atendimento  feito  pelo funcionario da Melhores Compras. Seu conteudo deve ser opcional.'
+    'Essa coluna  irï¿½  receber a hora do SAC do atendimento  feito  pelo funcionario da Melhores Compras. Seu conteudo deve ser opcional.'
     ;
 
 COMMENT ON COLUMN mc_sgv_sac.nr_tempo_total_sac IS
-    'Essa coluna  irá  receber o tempo total em horas  (HH24) computado desde a abertura até a conclusão dele. A unidade de medida é horas, ou seja, em quantas horas o chamado foi concluído desde a sua abertura.'
+    'Essa coluna  irï¿½  receber o tempo total em horas  (HH24) computado desde a abertura atï¿½ a conclusï¿½o dele. A unidade de medida ï¿½ horas, ou seja, em quantas horas o chamado foi concluï¿½do desde a sua abertura.'
     ;
 
 COMMENT ON COLUMN mc_sgv_sac.ds_detalhada_retorno_sac IS
-    'Essa coluna  irá  receber a descrição detalhada do retorno feito pelo funcionário a partir da solicitação do cliente. Seu conteúdo deve ser opcional e preenchido pelo funcionário.'
+    'Essa coluna  irï¿½  receber a descriï¿½ï¿½o detalhada do retorno feito pelo funcionï¿½rio a partir da solicitaï¿½ï¿½o do cliente. Seu conteï¿½do deve ser opcional e preenchido pelo funcionï¿½rio.'
     ;
 
 COMMENT ON COLUMN mc_sgv_sac.tp_sac IS
-    'Essa coluna  irá  receber o TIPO  do chamado SAC aberto pelo cliente.  Seu conteúdo deve ser  obrigatório e os possíveis valores são: (S)ugestão; (D)úvida ou  (E)logio.'
+    'Essa coluna  irï¿½  receber o TIPO  do chamado SAC aberto pelo cliente.  Seu conteï¿½do deve ser  obrigatï¿½rio e os possï¿½veis valores sï¿½o: (S)ugestï¿½o; (D)ï¿½vida ou  (E)logio.'
     ;
 
 COMMENT ON COLUMN mc_sgv_sac.st_sac IS
-    'Essa coluna  irá  receber o STATUS  do chamado SAC aberto pelo cliente.  Seu conteúdo deve ser  obrigatório e os possíveis valores são: (E)m Atendimento; (C)ancelado; (F)echado ou (X)Fechado com Insatisfação do cliente.'
+    'Essa coluna  irï¿½  receber o STATUS  do chamado SAC aberto pelo cliente.  Seu conteï¿½do deve ser  obrigatï¿½rio e os possï¿½veis valores sï¿½o: (E)m Atendimento; (C)ancelado; (F)echado ou (X)Fechado com Insatisfaï¿½ï¿½o do cliente.'
     ;
 
 COMMENT ON COLUMN mc_sgv_sac.nr_indice_satisfacao IS
-    'Essa coluna  irá  receber o índice de satisfação, , computado como um valor simples de 1 a 10, onde 1 refere-se ao cliente menos satisfeito e 10 o cliente mais satisfeito. Esse índice de satisfação é opcional e informado pelo cliente ao final do atendimento.'
+    'Essa coluna  irï¿½  receber o ï¿½ndice de satisfaï¿½ï¿½o, , computado como um valor simples de 1 a 10, onde 1 refere-se ao cliente menos satisfeito e 10 o cliente mais satisfeito. Esse ï¿½ndice de satisfaï¿½ï¿½o ï¿½ opcional e informado pelo cliente ao final do atendimento.'
     ;
 
 ALTER TABLE MC_SGV_SAC 
@@ -503,27 +503,27 @@ CREATE TABLE mc_video (
 );
 
 COMMENT ON COLUMN mc_video.cd_produto IS
-    'Nessa  coluna  será  armazenada o Código de produto, que pode ter nenhum ou vários vídeos associados e cada vídeo somente pode ser exibido caso seu status (ST_VIDEO) esteja em “A” (ativo). '
+    'Nessa  coluna  serï¿½  armazenada o Cï¿½digo de produto, que pode ter nenhum ou vï¿½rios vï¿½deos associados e cada vï¿½deo somente pode ser exibido caso seu status (ST_VIDEO) esteja em ï¿½Aï¿½ (ativo). '
     ;
 
 COMMENT ON COLUMN mc_video.nr_sequencia IS
-    'Essa coluna irá armazenar a sequencia do vídeo a partir do codigo do produto. Sempre o primeiro vídeo de determinado  produto deve iniciar com o número 1. Seu conteúdo é obrigatório.'
+    'Essa coluna irï¿½ armazenar a sequencia do vï¿½deo a partir do codigo do produto. Sempre o primeiro vï¿½deo de determinado  produto deve iniciar com o nï¿½mero 1. Seu conteï¿½do ï¿½ obrigatï¿½rio.'
     ;
 
 COMMENT ON COLUMN mc_video.ds_video IS
-    'Essa coluna armazena a descrição sobre o vídeo.';
+    'Essa coluna armazena a descriï¿½ï¿½o sobre o vï¿½deo.';
 
 COMMENT ON COLUMN mc_video.nr_duracao IS
-    'Essa coluna armazena a duração do vídeo em segundos.';
+    'Essa coluna armazena a duraï¿½ï¿½o do vï¿½deo em segundos.';
 
 COMMENT ON COLUMN mc_video.st_video IS
-    'Essa coluna armazena o Status do video, podendo ser A(tivo)  ou I(nativo). Vídeos inativo não podem ser visualizados.';
+    'Essa coluna armazena o Status do video, podendo ser A(tivo)  ou I(nativo). Vï¿½deos inativo nï¿½o podem ser visualizados.';
 
 COMMENT ON COLUMN mc_video.dt_cadastro IS
-    'Essa coluna armazena a data em que o vídeo foi cadastrado.';
+    'Essa coluna armazena a data em que o vï¿½deo foi cadastrado.';
 
 COMMENT ON COLUMN mc_video.vd_produto IS
-    'Essa coluna irá armazenar oo vídeo do produto no formato que melhor lhe  convier.  Para utilizar essa coluna tenha acesso a documentação oficial da Oracle. Seu conteúdo é opcional.'
+    'Essa coluna irï¿½ armazenar oo vï¿½deo do produto no formato que melhor lhe  convier.  Para utilizar essa coluna tenha acesso a documentaï¿½ï¿½o oficial da Oracle. Seu conteï¿½do ï¿½ opcional.'
     ;
 
 CREATE UNIQUE INDEX mc_video__idx ON
@@ -542,27 +542,27 @@ CREATE TABLE mc_visualizacao (
     nr_cliente   NUMBER(10) NOT NULL,
     cd_produto   NUMBER(10) NOT NULL,
     cd_video     NUMBER(5) NOT NULL,
-    dt_hr_visual DATETIME NOT NULL,
+    dt_hr_visual TIMESTAMP NOT NULL,
     st_usuario   CHAR(1) NOT NULL
 );
 
 COMMENT ON COLUMN mc_visualizacao.cd_visual IS
-    'Essa coluna armazena o código de visualização do vídeo no momento em que foi assistido por um usuário logado ou anônimo.';
+    'Essa coluna armazena o cï¿½digo de visualizaï¿½ï¿½o do vï¿½deo no momento em que foi assistido por um usuï¿½rio logado ou anï¿½nimo.';
 
 COMMENT ON COLUMN mc_visualizacao.nr_cliente IS
-    'Essa coluna armazena o Número do Cliente que assistiu ao vídeo, se ele estava logado.';
+    'Essa coluna armazena o Nï¿½mero do Cliente que assistiu ao vï¿½deo, se ele estava logado.';
 
 COMMENT ON COLUMN mc_visualizacao.cd_produto IS
-    'Essa coluna armazena o código do produto a qual o a visualização e o vídeo estão relacionados.';
+    'Essa coluna armazena o cï¿½digo do produto a qual o a visualizaï¿½ï¿½o e o vï¿½deo estï¿½o relacionados.';
 
 COMMENT ON COLUMN mc_visualizacao.cd_video IS
-    'Essa coluna armazena o código do vídeo a qual a visualização pertence.';
+    'Essa coluna armazena o cï¿½digo do vï¿½deo a qual a visualizaï¿½ï¿½o pertence.';
 
 COMMENT ON COLUMN mc_visualizacao.dt_hr_visual IS
-    'Essa coluna armazena a data, hora, minuto e segundo em que o vídeo visualizado no formato dd-mm-yyyy hh:mm:ss.';
+    'Essa coluna armazena a data, hora, minuto e segundo em que o vï¿½deo visualizado no formato dd-mm-yyyy hh:mm:ss.';
 
 COMMENT ON COLUMN mc_visualizacao.st_usuario IS
-    'Essa coluna armazena o status do usuário que visualizou o vídeo.';
+    'Essa coluna armazena o status do usuï¿½rio que visualizou o vï¿½deo.';
 
 ALTER TABLE mc_visualizacao
     ADD CONSTRAINT mc_visualizacao_pk PRIMARY KEY ( cd_visual,
@@ -655,7 +655,7 @@ NOCYCLE;
 
 
 
--- Relatório do Resumo do Oracle SQL Developer Data Modeler: 
+-- Relatï¿½rio do Resumo do Oracle SQL Developer Data Modeler: 
 -- 
 -- CREATE TABLE                            17
 -- CREATE INDEX                             1

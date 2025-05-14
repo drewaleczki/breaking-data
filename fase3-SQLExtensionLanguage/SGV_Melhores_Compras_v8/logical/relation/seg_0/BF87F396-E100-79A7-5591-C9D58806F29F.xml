@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="FK_MC_ESTADO" directorySegmentName="seg_0" id="BF87F396-E100-79A7-5591-C9D58806F29F">
+<createdBy>renan</createdBy>
+<createdTime>2024-09-13 16:37:58 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras_v8</ownerDesignName>
+<engineerTo>
+<item key="205759E8-1F31-C5BE-A38D-B6A2D4EB7500" value="true"/>
+</engineerTo>
+<sourcePk>C3BE6F5D-9B73-E456-187A-D3810AA310B8</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>5CCE66CC-C2B8-D3A6-3A7B-03F672E94531</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>D21A0D5B-DC85-DE84-F940-9207536747C0</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

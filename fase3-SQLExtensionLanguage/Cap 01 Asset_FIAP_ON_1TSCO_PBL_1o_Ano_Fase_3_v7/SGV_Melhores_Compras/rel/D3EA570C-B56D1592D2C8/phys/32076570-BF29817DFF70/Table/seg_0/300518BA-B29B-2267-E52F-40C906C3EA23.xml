@@ -1,0 +1,68 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DB_END_FUNC" directorySegmentName="seg_0" id="300518BA-B29B-2267-E52F-40C906C3EA23">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CD_FUNCIONARIO" id="0151727B-D159-4689-7F58-0C4B5DA8A732">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_END" id="2AEDAAEF-ED68-A233-D5F1-88880B167395">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_END" id="3B90E30E-1377-73E4-3A38-A1DB8AA0FE82">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_COMPLEMENTO_END" id="7A4DE8B4-C38E-5F02-022F-1B8C0CC3C972">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_LOGRADOURO" id="8BB78B70-8F75-D589-6AE7-28248465F89C">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_TERMINO" id="A33A96FF-8500-434C-BA86-22468A20EC56">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DT_INICIO" id="BC8CF6C5-8451-7F3A-41AE-D8C09FC60705">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_DB_END_FUNC_LOGRADOURO" id="4EC79B77-64F4-B8E5-4E4C-8290BE16FEA0">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_DB_END_FUNC" id="B5CDFD36-0C3C-FF38-D54E-D7D94B185B6E">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DB_END_FUNC_PK" id="5FE8FD3F-E0FD-7998-34D0-2F55F2BA0444">
+<createdBy>salviop</createdBy>
+<createdTime>2019-05-15 19:46:49 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

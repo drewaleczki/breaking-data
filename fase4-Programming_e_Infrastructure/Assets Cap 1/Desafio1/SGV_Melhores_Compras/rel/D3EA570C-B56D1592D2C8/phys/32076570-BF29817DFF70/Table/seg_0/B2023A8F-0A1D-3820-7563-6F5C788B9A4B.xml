@@ -1,0 +1,53 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DB_PRODUTO_IMAGEM" directorySegmentName="seg_0" id="B2023A8F-0A1D-3820-7563-6F5C788B9A4B">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 16:25:51 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="CD_PRODUTO" id="225F4AB9-BBCA-CB8B-97D8-9F2E897388F7">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 16:25:51 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TP_IMAGEM_PRODUTO" id="68F27392-EC5D-014F-2F75-0F87D52C362C">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 16:25:51 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IM_PRODUTO" id="7E9B5FE8-F95F-BBC5-5033-C404255A519D">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 16:25:51 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NR_SEQUENCIA" id="841F8E3A-5C2D-8E5E-D0D5-86B7F63BF8AE">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 16:25:51 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DS_PATH_IMAGEM" id="DD2A19E7-4C8A-406A-D42F-8A3E827266F8">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 22:53:53 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK_DB_PRODUTO_IMAGEM" id="FF188416-05D0-1E22-CE8C-BB61AB076AC0">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 16:25:51 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_SB_PRODUTO_IMAGEM" id="AE5DBEAD-59E7-2F73-3BB4-44F72011E9A2">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2020-11-19 16:25:51 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

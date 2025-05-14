@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="MC_DEPTO" directorySegmentName="seg_0" id="09BF5BEA-E4F6-2CAC-2D9F-A77222403602">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:44:39 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<logging>YES</logging>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NM_DEPTO" id="27F29CD9-2B20-9300-6B7A-064098A56B24">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:45:07 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ST_DEPTO" id="9E35BA4E-7D2E-3CD8-54B9-E6A678A3EDE8">
+<createdBy>Gustavo Padlipskas</createdBy>
+<createdTime>2021-12-20 12:48:31 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CD_DEPTO" id="E8039C47-B236-3C3A-A0DF-33D17B2C3CF9">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:45:07 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DB_DEPTO" id="18061CA5-9C6B-78D3-90B7-7F5EC214B9D5">
+<createdBy>salviop</createdBy>
+<createdTime>2013-01-03 21:45:07 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexSort>NO</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

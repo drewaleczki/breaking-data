@@ -1,0 +1,27 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="DB_ESTADO" directorySegmentName="seg_0" id="DB5BED7F-2AEF-7CEF-DFC4-5E620099C699">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:36:25 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<logging>YES</logging>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SG_ESTADO" id="52244476-C5C1-4732-1A72-E3E00701718E">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:38:43 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NM_ESTADO" id="6C6F1CCD-F35C-2095-E99A-C5698BF7D335">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:38:43 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PK_DB_ESTADO" id="B6CC7716-49FC-274F-E4DF-442A16BFD800">
+<createdBy>salviop</createdBy>
+<createdTime>2013-06-20 00:38:43 UTC</createdTime>
+<ownerDesignName>SGV_Melhores_Compras</ownerDesignName>
+<indexSort>NO</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>
